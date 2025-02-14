@@ -1,0 +1,52 @@
+.baking-container{
+    background-color: #fff;
+    padding-block: 90px;
+    min-height: 80vh;
+}
+
+.baking-container p{
+    font-size: 17px;
+    color: rgb(104, 104, 104);
+    line-height: 2;
+}
+
+.baking-header-container{
+    text-align: center;
+}
+
+.baking-header {
+    padding-bottom: 20px;
+}
+
+.baking-header-text{
+    padding-bottom: 60px;
+    font-family: "Alegreya Sans", serif;
+    font-weight: 400;
+    color: rgb(104, 104, 104);
+    font-size: 17px;
+}
+
+.baking-inner-container{
+    width: 100%;
+}
+
+.baking-item{
+    width: 30.5%;
+    float: left;
+    padding-left: 35px;
+    text-align: center;
+}
+
+.baking-img{
+    width: 100%;
+}
+
+.baking-item-header{
+    font-family: "Alegreya", serif;
+    font-weight: 400;
+    color: rgb(48, 48, 48);
+    padding-block: 25px;
+    font-size: 26px;
+    font-weight: 100;
+}
+

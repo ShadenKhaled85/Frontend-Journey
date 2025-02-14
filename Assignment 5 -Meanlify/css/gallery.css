@@ -1,0 +1,84 @@
+.gallery-container{
+    background-color: var(--white-grey);
+    padding-bottom: 40px;
+}
+
+.gallery-header{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery-header h2{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.gallery-container h3{
+    font-family: var(--inter-font);
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.gallery-container h2 span{
+    color: var(--red-color)
+}
+
+/* Makes the img-column beside eachh other, but each img-column has 2 images,
+so the second picture will start a new line  */
+.img-container{
+    display: flex;
+    gap: 30px;
+}
+
+.img-container .img{
+    width: 100%;
+}
+
+.img-container picture{
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden; 
+    margin-top: 30px;
+    border: 3px solid var(--white);
+    color: var(--white)
+}
+
+picture .img-layer{
+    background-color: rgba(0, 0, 0, 0.292);
+    display: flex; /* for centering text */
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    top:0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all var(--animation-duration);
+} 
+
+picture:hover .img-layer{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+picture img{
+    transition: transform var(--animation-duration);
+}
+
+picture:hover img{
+    transform: scale(1.1);
+}
+
+picture h2{
+    color: var(--white);
+    font-size: 24px;
+    font-family: var(--inter-font);
+}

@@ -1,0 +1,44 @@
+.services-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: beige;
+    padding: 50px;
+}
+
+.services-header {
+    position: relative;
+    display: inline-block;
+    font-size: 40px; /* Adjust font size as needed */
+    color: #333; /* Text color */
+    padding-bottom: 10px; /* Space for underlines */
+}
+
+.services-header::before,
+.services-header::after,
+.services-header span::before {
+    content: '';
+    position: absolute;
+    height: 1px; /* Thickness of the underline */
+    background-color: red; /* Color of the underline */
+}
+
+.services-header::before {
+    bottom: 0; /* First underline */
+    left: 80px;
+    right: 80px;
+}
+
+.services-header::after {
+    bottom: -7px; /* Second underline */
+    left: 40px;
+    right: 40px;
+}
+
+.services-header span::before {
+    bottom: -14px; /* Third underline */
+    left: 80px;
+    right: 80px;
+}

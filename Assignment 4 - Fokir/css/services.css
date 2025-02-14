@@ -1,0 +1,88 @@
+.services-container{
+    background-color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+    padding-block: 90px;
+}
+
+.services-header {
+    width: 100%;
+    position: relative;
+    font-size: 40px;
+    font-family: "Source Sans 3", serif;
+    color: #333333;
+    font-weight: 700;
+    padding-bottom: 5px; /* Space for underlines */
+}
+
+.services-header::before,
+.services-header::after,
+.services-header .underline-span::before {
+    content: '';
+    position: absolute;
+    height: 1px; /* Thickness of the underline */
+    background-color: #ff3059a3; /* Color of the underline */
+}
+
+.services-header::before {
+    bottom: 0; /* First underline */
+    left: 48%;
+    right: 48%;
+}
+
+.services-header::after {
+    bottom: -5px; /* Second underline */
+    left: 45%;
+    right: 45%;
+}
+
+.services-header .underline-span::before {
+    bottom: -10px; /* Third underline */
+    left: 48%;
+    right: 48%;
+}
+
+.services-item{
+    display: inline-block;
+    width: 23%;
+    position: relative;
+    top: 70px;
+    transition: all 0.5s ease;
+    padding-inline: 10px
+}
+
+.services-item .services-icon{
+    display: block;
+    padding: 20px;
+    color: #ff305b;
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
+
+.services-item-header{
+    font-family: "Source Sans 3", serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.services-text{
+    width: 100%;
+    height: 100px;
+    font-family: "Roboto", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+}
+
+.services-item:hover{
+    background-color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.164);
+}
+
+/* To ensure the icon reacts to the container hover. */
+
+.services-item:hover .services-icon{
+    transform: scale(1.2);
+}

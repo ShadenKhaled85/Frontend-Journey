@@ -1,0 +1,121 @@
+.blog-container{
+    background-color: #f1f1f1;
+}
+
+.blog-inner-container{
+    position: relative;
+    padding-block: 80px;
+}
+
+.our-blog-header{
+    font-size: 40px;
+    font-family: "Source Sans 3", serif;
+    color: #333333;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    left: 45%
+}
+
+.our-blog-header::before,
+.our-blog-header::after,
+.our-blog-header .underline-span::before {
+    content: '';
+    position: absolute;
+    height: 1px; /* Thickness of the underline */
+    background-color: #ff3059a3; /* Color of the underline */
+}
+
+.our-blog-header::before {
+    bottom: 0; /* First underline */
+    left: 35%;
+    right: 35%;
+}
+
+.our-blog-header::after {
+    bottom: -5px; /* Second underline */
+    left: 10%;
+    right: 10%;
+}
+
+.our-blog-header .underline-span::before {
+    bottom: -10px; /* Third underline */
+    left: 35%;
+    right: 35%;
+}
+
+.blog-items-container{
+    width: 100%;
+    position: relative;
+    top: 40px;
+}
+
+.blog-item{
+    width: 30%;
+    display: inline-block;
+    margin-inline: 18px;
+    background-color: white;
+}
+
+.blog-item img{
+    display: block;
+    width: 100%;
+    height: 250px;
+}
+
+.blog-item iframe{
+    display: block;
+    width: 100%;
+    height: 250px;
+}
+
+.blog-text-container{
+    padding: 20px;
+}
+
+p.date{
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 14px;
+}
+
+h2.blog-item-header{
+    font-family: "Source Sans 3", serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 14px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+h2.blog-item-header:hover{
+    color: #ff305b;
+}
+
+.blog-text{
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.read-more-span, .read-more-container{
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.read-more-container:hover{
+    color: #ea3057;
+}
+
+.read-more-span:hover{
+    color: #ea3057;
+}

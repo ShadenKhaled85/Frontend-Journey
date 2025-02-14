@@ -1,0 +1,38 @@
+.location-container{
+    background-color: #f8f8f8;
+    height: 65vh;
+    padding-block: 90px ;
+}
+
+.location-text-container{
+    font-family: "Alegreya Sans", serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 2; 
+    float: left;
+    width: 50%;
+    padding-left: 40px;
+    padding-block: 60px;
+}
+
+.location-header{
+    font-family: "Alegreya", serif;
+    font-weight: 400;
+    color: rgb(48, 48, 48);
+    font-size: 26px;
+}
+
+.location-text{
+    margin-top: 45px;
+    color: rgb(104, 104, 104);
+} 
+
+.location-text2{
+    margin-top: 30px;
+    color: rgb(104, 104, 104);
+} 
+
+.location-img{
+    width: 43%;
+    float: right;
+}

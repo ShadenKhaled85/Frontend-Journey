@@ -1,0 +1,22 @@
+:root {
+    /* Light Mode Colors */
+    --background-color: #ffffff;
+    --secondary-background: #eee;
+}
+
+[data-theme="dark"] {
+    /* Dark Mode Colors */
+    --background-color: #000;
+    --secondary-background: #000;
+}
+
+/* Apply Variables to Body */
+body {
+    background-color: var(--background-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.gallery-container {
+    background-color: var(--background-color);
+    transition: background-color 0.3s, color 0.3s;
+}

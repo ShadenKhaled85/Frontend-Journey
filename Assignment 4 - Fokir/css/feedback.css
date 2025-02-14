@@ -1,0 +1,135 @@
+.feedback-container{
+    width:100%;
+    padding-block: 80px;
+    position: relative;
+    left: 25%;
+}
+
+.feedback-header{
+    width: 100%;
+    font-family: "Source Sans 3", serif;
+    color: #333333;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    left: 15%;
+    padding-bottom: 60px;
+    bottom:20px;
+}
+
+.feedback-header::before,
+.feedback-header::after,
+.feedback-header .underline-span::before {
+    content: '';
+    position: absolute;
+    height: 1px; /* Thickness of the underline */
+    background-color: #ff3059a3; /* Color of the underline */
+}
+
+.feedback-header::before {
+    bottom: 60px;/* First underline */
+    width: 60px;
+    left: 7.5%;
+}
+
+.feedback-header::after {
+    bottom: 55px; /* Second underline */
+    width: 140px;
+    left: 5%;
+}
+
+.feedback-header .underline-span::before {
+    bottom: 50px; /* Third underline */
+    width: 60px;
+    left: 7.5%;
+}
+
+.feedback-card{
+    background-color: #f1f1f1;
+    position: relative;
+    width: 50%;
+    height: 40vh;
+    border-radius: 6px;
+}
+
+.img-container{
+    display: inline-block;
+    width: 44%;
+    position: relative;
+    left: 0;
+}
+
+.red-triangle{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    border-top-left-radius: 6px;
+    border-left: 100px solid #ff305b;
+    border-top: 100px solid #ff305b;
+    border-bottom: 100px solid transparent;
+    border-right: 100px solid transparent;
+    z-index: 1;
+}
+
+.feedback-img{
+    position: relative;
+    left: 40px;
+    top: 50px;
+    border-radius: 50%;
+    height: 110px;
+    z-index: 2;
+}
+
+.feedback-text-container{
+    display: inline-block;
+    position: absolute;
+    left: 23%;
+    top: 18%;
+}
+
+.alex-header{
+    font-family: "Source Sans 3", serif;
+    font-size: 26px;
+    color: #333;
+    font-weight: 600;
+    position: relative;
+    bottom: 15px;
+} 
+
+.location-icon{
+    display: inline-block;
+    width: 14px;
+    font-size: 16px;
+    color: #555;
+    font-weight: 400;
+}
+
+.united-span{
+    display: inline-block;
+    width: 15px;
+    font-family: "Roboto", serif;
+    font-size: 16px;
+    color: #555;
+    padding-bottom: 15px;
+}
+
+.feedback-text{
+    font-family: "Roboto", serif;
+    font-size: 16px;
+    color: #555;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.stars-icons-container{
+    padding-block: 25px;
+    color: #f1c30d;
+    font-size: 16px;
+}
+
+.fa-star-o {
+    color: #f1c30d;
+    font-size: 16px;
+}

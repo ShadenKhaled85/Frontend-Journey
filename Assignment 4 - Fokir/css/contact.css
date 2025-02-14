@@ -1,0 +1,70 @@
+.contact-inner-container{
+    padding-block: 90px;
+    position: relative;
+}
+
+
+.contact-form{
+    font-family: "Roboto", serif;
+    display: block;
+    padding-inline: 20px;
+    width: 100%;
+    margin-top: 35px;
+    position: relative;
+    left: 12%;
+}
+
+input.contact-input-name,
+input.contact-input-email,
+input.contact-input-subject,
+.contact-textarea{
+    font-size: 15px;
+    display: inline-block;
+    margin-bottom: 25px;
+    border: 1px solid rgba(160, 10, 10, 0.5);
+    border-radius: 4px;
+    padding: 15px 20px;
+    transition: box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Focus Effect */
+input.contact-input-name:focus,
+input.contact-input-email:focus,
+input.contact-input-subject:focus,
+.contact-textarea:focus {
+    box-shadow: 2px 3px 4px rgba(48, 4, 4, 0.342); /*Highlighted shadow for focus */
+    outline: none !important; /*Ensure no black border appears  */
+} 
+
+.contact-input-name,
+.contact-input-email{
+    width: 30%;
+    margin-inline: 18px;
+}
+
+.contact-input-subject,
+.contact-textarea{
+    margin-left: 18px;
+    width: 67%;
+}
+
+.contact-textarea{
+    resize: both;
+    font-family: "Roboto", serif;
+}
+
+.contact-btn{
+    font-size: 14px;
+    margin-inline: 18px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    background-color: #ff305b;
+    color: white;
+    border: 1px solid transparent;
+    transition: background-color 0.5s ease;
+}
+
+.contact-btn:hover{
+    background-color: rgb(241, 0, 0);
+    cursor: pointer;
+}

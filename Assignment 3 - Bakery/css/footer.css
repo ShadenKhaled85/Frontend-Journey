@@ -1,0 +1,77 @@
+.footer-container{
+    background-color: #403d38;
+}
+
+.footer-inner-container{
+    padding-block: 60px ;
+    height: 45vh;
+}
+
+.footer-inner-container p{
+    font-size: 17px;
+}
+
+.footer-item{
+    float: left;
+    width: 21.5%;
+    padding-inline: 20px;
+}
+
+.footer-header{
+    font-family: "Alegreya", serif;
+    font-weight: 400;
+    margin-bottom: 25px;
+    font-weight: 300;
+    color: white;
+}
+
+.about-footer-text{
+    color: #969696;
+    font-family: "Alegreya Sans", serif;
+    font-weight: 400;
+    line-height: 1.8;
+    font-size: 17px;
+    margin-bottom: 25px;
+    padding-top: 14px;
+}
+
+.footer-item-text{
+    font-family: "Alegreya Sans", serif;
+    font-weight: 400;
+    padding-block: 12px;
+    color: #969696;
+}
+
+.footer-list-item{
+    margin-block: 25px;
+}
+
+.footer-item span{
+    font-family: "Alegreya Sans", serif;
+    font-weight: 400;
+    color: #969696;
+}
+
+.footer-icon-globe{
+    padding-top: 20px;
+}
+
+.footer-globe-link{
+    color: #969696;
+    text-decoration: none;
+}
+
+.globe-item{
+    background-image:url(../images/globe4.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+hr {
+    border: none; /* Remove the default border */
+    height: 0.1px; /* Set the thickness */
+    background-color: #96969628; 
+}
+
+
+/* #353330 */

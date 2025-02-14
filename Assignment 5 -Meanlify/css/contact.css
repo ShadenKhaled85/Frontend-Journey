@@ -1,0 +1,116 @@
+
+.contact-container .container{
+    flex-direction: column;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-block: 20px;
+}
+
+/* > means all divs that are immediate children of contact-info(not nested) */
+.contact-info > div {
+    display: flex;
+    align-items: center;
+    width: calc(50% - 10px); /* Two columns */
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.contact-icon {
+    background: var(--red-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.contact-info h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #7d7d7d;
+    font-family: var(--inter-font);
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #212529;
+}
+
+/* Contact Form */
+.contact-form {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.form-grp {
+    display: flex;
+    gap: 10px;
+}
+
+.form-grp input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact-form input,
+.contact-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Focus Effect */
+input.input-focus:focus,
+.contact-textarea:focus {
+    border: 2px solid var(--red-color); 
+    outline: none !important; /*Ensure no black border appears  */
+} 
+
+.contact-textarea {
+    height: 100px;
+    resize: both;
+}
+
+.center-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form .btn {
+    margin-top: 30px;
+    padding-inline: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-info > div {
+        width: 100%;
+    }
+
+    .form-grp {
+        flex-direction: column;
+    }
+
+    .form-grp input {
+        width: 100%;
+    }
+}

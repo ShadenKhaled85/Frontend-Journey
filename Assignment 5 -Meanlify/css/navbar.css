@@ -1,0 +1,87 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+    padding-top: 20px;
+    color: #212529;
+    font-family: 'Open Sans', serif;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 15px;
+    z-index: 400;
+    box-shadow: 3px 1px 1px rgba(0, 0, 0, 0.055) ;
+
+}
+
+nav h1{
+    font-size: 30px;
+    font-weight: 700px;
+}
+
+.red-dot-span{
+    color: var(--red-color);
+}
+
+.nav-list ul{
+    display: flex;
+    gap: 10px;
+}
+
+.nav-list ul li{
+    padding-inline: 4px;
+}
+
+nav h1::after{
+    content: "";
+    color: var(--red-color);
+}
+
+.nav-list ul li a{
+    color: var(--grey);
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    transition: all 1s ease; /* 1s sllows the width goes from 0% to 100% slowly */ 
+}
+
+.nav-list ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--red-color);
+    bottom: -3px;
+    left: 0;
+    transition: all 1s;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+/* MODE */
+.dark-mode,.light-mode{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #c17e1f !important;
+}

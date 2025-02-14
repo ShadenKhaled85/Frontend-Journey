@@ -1,0 +1,67 @@
+@media screen and (min-width:1536px){
+    .container{
+        max-width: 1280px; /* Breakpoint */
+    }
+} 
+
+@media screen and (max-width:1536px){
+    .container{
+        max-width: 1024px; /* Breakpoint */
+    }
+} 
+
+@media screen and (max-width:1280px){
+    .container{
+        max-width: 1024px; /* Breakpoint */
+    }
+} 
+
+@media screen and (max-width:1024px){
+    .container{
+        max-width: 768px; /* Breakpoint */
+    }
+}
+
+@media screen and (max-width:768px){
+    .container{
+        max-width:640px;
+        padding-inline: 15px; 
+    }
+    .home-container .container{
+        display: flex;
+        position: absolute;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+} 
+
+@media screen and (max-width:640px){
+    .container{
+        padding-inline: 15px; 
+    }
+    .home-container .container{
+        display: flex;
+        position: absolute;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .chefs-container .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .gallery-container picture{
+        width: 100%;
+    } 
+    .nav-list ul li{
+        padding-inline: 10px;
+    } 
+    .nav-list ul{
+        gap: 30px;
+    }
+    
+} 
+

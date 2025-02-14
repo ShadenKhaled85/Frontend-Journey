@@ -1,0 +1,65 @@
+.portfolio-container {
+    background-color: #fff;
+    padding: 90px;
+    text-align: center;
+}
+
+.portfolio-header{
+    width: 100%;
+    position: relative;
+    font-size: 40px;
+    font-family: "Source Sans 3", serif;
+    color: #333333;
+    font-weight: 700;
+    padding-bottom: 5px; /* Space for underlines */
+}
+
+.portfolio-categories{
+    list-style-type: none; /* to remove bullet points of the list */
+    margin-top: 70px;
+}
+
+.list-category{
+    font-family: "Roboto", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    display: inline-block;
+    padding-inline: 10px;
+}
+
+.portfolio-images-container{
+    width: 100%;
+    margin-top: 55px;
+}
+
+.portfolio-img-container{
+    display: inline-block;
+    width: 30%;
+    margin-inline: 15px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.portfolio-img{
+    display: block;
+    width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.portfolio-img-container::after {
+    content: "";
+    position: absolute; /* Goes to the nearest positioned ancestor(portfolio-img-container) */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.5s ease; 
+}
+
+.portfolio-img-container:hover::after {
+    opacity: 1; /* Show the black overlay on hover */
+}
+

@@ -1,0 +1,122 @@
+.footer-container{
+    background-color: rgba(0, 0, 0, 0.944); 
+    margin-top: 50px;
+    padding-block: 20px;
+}
+
+.footer-container .container{
+    gap: 20px;
+    align-items: flex-start;
+    color: white;
+}
+
+.footer-container .container > div{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.first-footer img{
+    width: 45px;
+    margin-right: 10px;
+}
+
+.first-footer{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.social-media-icons-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container hr{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none; 
+    height: 1px;
+    margin-top: 10px;
+}
+
+.social-media-icons{
+    padding-top: 20px;
+    font-size: 26px;
+}
+
+.social-media-icon{
+    margin-inline: 30px;
+}
+
+.email-box{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+} 
+
+.subscription-footer input{
+    width: 100%;
+    padding: 10px 10px;
+}
+
+/* Focus Effect */
+input.footer-focus:focus {
+    outline: none !important; /*Ensure no black border appears  */
+} 
+
+.email-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--red-color);
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: background-color var(--animation-duration) ease;
+}
+
+.email-btn:hover{
+    background-color: red;
+}
+
+.quick-links-header{
+    padding-block: 20px;
+}
+
+.quick-links{
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap into multiple lines */    
+    list-style: none; 
+}
+
+.link-hover{
+    flex: 1 1 50%; /* Each item takes 50% of the container width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    padding: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.link-hover:hover{
+    transform: translateX(10px); /* Move the text to the right */
+    background-color: #ffffff18; 
+}
+
+.touch-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.touch-icon{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.touch-icon i{
+    font-size: 22px;
+    color: var(--red-color);
+}

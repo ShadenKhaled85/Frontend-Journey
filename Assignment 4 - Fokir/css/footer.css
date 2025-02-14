@@ -1,0 +1,35 @@
+.footer-container{
+    position: relative;
+    background-color: #1f1f1f;
+    text-align: center;
+    padding-block: 60px;
+}
+
+.footer-icons-container{
+    color: white;
+    margin-bottom: 15px;
+}
+
+i.footer-icon {
+    display: inline-block;
+    margin-inline: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+i.footer-icon:hover{
+    color: rgb(255, 48, 91);
+}
+
+.footer-text{
+    font-family: "Roboto", serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.copyright-link{
+    color: rgb(255, 48, 91);
+}

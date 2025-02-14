@@ -1,0 +1,32 @@
+.contact-container{
+    height: 65vh;
+}
+
+.contact-text-container{
+    font-family: "Alegreya Sans", serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 2; 
+    float: left;
+    width: 50%;
+}
+
+.contact-details{
+    font-family: "Alegreya Sans", serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: rgb(104, 104, 104);
+    margin-block: 30px ;
+}
+
+.contact-item{
+    margin: 20px 0;
+    color: rgb(104, 104, 104);
+
+} 
+
+.iframe-map{
+    border: none;
+    margin-left: 40px;
+}
+

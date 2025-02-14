@@ -1,0 +1,94 @@
+:root{
+    --red-color: #ba1111;
+    --grey: #7e838a;
+    --white: #fff;
+    --white-grey: #eee;
+    --hover-red-color: #d60000;
+    --main-padding: 20px;
+    --animation-duration: 0.5s;
+    --heading-font: "Amatic SC", sans-serif;
+    --text-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --inter-font: "Inter", sans-serif;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth; /* to move smoothly to the target section */
+}
+
+.container{
+    width: 100%;
+}
+
+h2{
+    font-family: var(--heading-font);
+    color: #37373f;
+}
+
+
+h3{
+    font-family: var(--inter-font);
+}
+
+p{
+    font-family: var(--text-font);
+}
+
+input, textarea{
+    font-family: var(--text-font);
+}
+
+/* a,span{
+    display: inline-block;
+} */
+
+a{
+    text-decoration: none;
+    color: inherit
+}
+
+ul{
+    list-style: none;
+}
+
+picture, img{
+    display: block;
+}
+
+/* Repeated Styles */
+.white-bg{
+    background-color: var(--white);
+}
+
+.white-grey-bg{
+    background-color: var(--white-grey);
+}
+
+.btn{
+    /* Variables cant be used outside this class including hover */
+    --color: var(--white);
+    --padding: 15px 30px;
+    --border-width: 1px;
+    --border-radius: 25px;
+    --hover-bg-color: var(--hover-red-color);
+    --hover-color: transparent;
+    --font-size: 16px;
+
+    background-color: var(--red-color);
+    padding: var(--padding);
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    color: var(--color);
+    font-size: var(--font-size);
+    cursor: pointer;
+    transition: background-color var(--animation-duration) ; /* color var(--animation-duration) */
+}
+
+.btn:hover{
+    background-color: var(--hover-red-color);
+}

@@ -1,0 +1,22 @@
+.final-footer{
+    background-color: #353330;
+    height: 30vh;
+    text-align: center;
+    padding-block: 60px;
+    color: #969696be;
+}
+
+.final-footer-text{
+    font-family: "Alegreya Sans", serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding-block: 22px;
+}
+
+.final-icon{
+    border: 1px solid #969696be;
+    background-color: #96969621;
+    border-radius: 30px;
+    padding: 12px;
+    margin-inline: 3px;
+}

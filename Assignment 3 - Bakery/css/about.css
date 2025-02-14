@@ -1,0 +1,58 @@
+/* ABOUT CONTAINER */
+
+.about-container{
+    margin-block: 100px;
+    min-height: 60vh;
+    padding-left: 60px;
+    font-size: 17px;
+}
+
+.bread-img{
+    width: 45%;
+    float: left;
+    height: 500px;
+}
+
+.about-header{
+    font-family: "Alegreya", serif;
+    font-weight: 400;
+    color: rgb(48, 48, 48);
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.about-inner-container{
+    font-family: "Alegreya Sans", serif;
+    font-weight: 400;
+    background-color: #fff;
+    padding-top: 28px ;
+    margin-right: 30px;
+    width: 47%;
+    float: right;
+}
+
+.about-text, .about-item{
+    color: rgb(104, 104, 104);
+}
+
+.about-text{
+    line-height: 1.6; 
+}
+
+/* ICONS */ 
+
+.about-item{
+    margin: 35px 0;
+}
+
+.icon{
+    border: 1px #8e775467 solid ;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.span-icon{
+    padding-left: 8px;
+}
+
+
