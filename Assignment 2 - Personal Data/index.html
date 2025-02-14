@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <fieldset class="field-container">
+            <legend class="title">Personal Data</legend>
+            <fieldset class="inner-field">
+                <legend class="title">Your Name</legend>
+                <br><br>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="first">First Name : </label>
+                        </td>
+                        <td>
+                            <input id="first" type="text" name="firstName" placeholder="Ex: Shaden"/>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label for="second">Second Name : </label>
+                        </td>
+                        <td>
+                            <input id="second" type="text" name="secondName" placeholder="Ex: Khaled"/>
+                        </td>
+                    </tr>
+                </table>
+
+            </fieldset>
+            <br><br><br><br>
+
+            <table>
+                <tr>
+                    <td>
+                        <label for="tel">Your Phone : </label>
+                    </td>
+                    <td>
+                        <input id="tel" type="tel" name="telephone" placeholder="Ex: 01019292973"/> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mail">Your Email : </label>
+                    </td>
+                    <td>
+                        <input id="mail" type="email" name="mail" placeholder="Example@gmail.com"/> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass">Your Password : </label>
+                    </td>
+                    <td>
+                        <input id="pass" type="password" name="password" placeholder="Create a strong password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="matchPass">Re-enter Your Password : </label>
+                    </td>
+                    <td>
+                        <input id="matchPass" type="password" name="MatchingPassword" placeholder="Match your password"/> 
+                    </td>
+                </tr>
+            </table>
+
+                <br><br><br>
+                <label>Choose your Gender</label><br>
+                <input id="male" type="radio" value="male" name="gender"/> 
+                <label for="male">Male</label> <br>
+                <input id="female" type="radio" value="female" name="gender"/> 
+                <label for="female">Female</label>
+                <br><br>
+                <input id="student" type="checkbox" value="student" name="univStatus"/>
+                <label for="student">Student</label><br>
+                <input id="graduate" type="checkbox" value="graduate" name="univStatus"/>
+                <label for="graduate">Graduate</label> 
+            
+            <br><br>
+
+            <input list="Univv" name="userUniv"/> 
+            <datalist id="Univv">
+                <option value="AUC">
+                <option value="MUST">
+                <option value="GUC">
+                <option value="BUE">
+            </datalist>
+            <br><br>
+
+            <label for="select">Select an Option</label><br>
+            <select id="select">
+                <optgroup label="Group 1">
+                    <option>Option 1.1</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                    <option>Option 2.1</option>
+                    <option>Option 2.2</option>
+                </optgroup>
+                <optgroup label="Group 3" disabled>
+                    <option>Option 3.1</option>
+                    <option>Option 3.2</option>
+                    <option>Option 3.3</option>
+                </optgroup>
+            </select>
+            <br><br><br>
+
+            <input id="submit" class="image-btn" type="image" src="submit.jpg" alt="Submit"/> 
+            <!-- <button type="submit" class="submit-btn">
+                <img class="submit-image" src="A_black_image.jpg" alt="Submit">
+                <span class="submit-span">Submit</span> -->
+                <br><br>
+
+
+        </fieldset>
+        
+    </form>
+</body>
+</html>
