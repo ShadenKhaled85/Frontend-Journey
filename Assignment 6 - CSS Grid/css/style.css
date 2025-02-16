@@ -1,0 +1,64 @@
+.outer-container{
+    background-color: purple;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "mobile-content mobile-img main-header main-header"
+    "mobile-content mobile-img main-header main-header"
+    "keyboard pc apple-content floppy-disk"
+    "keyboard pc apple-content floppy-disk"
+    ;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto;
+}
+
+/* ?=================== FIRST ROW =================== */
+.mobile-content{
+    grid-area: mobile-content;
+    background-color: var(--white-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.mobile-img{
+    grid-area: mobile-img;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: var(--white-bg);
+}
+
+.main-header{
+    grid-area: main-header;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    text-align: center;
+}
+
+.main-header h1{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.main-header a{
+    color: var(--blue-color);
+    font-weight: 400;
+    
+} 
+
+/* ?=================== SECOND ROW =================== */
+
+
+.floppy-disk .flag img{
+    width: 4%;
+    display: inline-block;
+}

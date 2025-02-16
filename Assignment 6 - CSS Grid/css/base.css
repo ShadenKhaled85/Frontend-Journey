@@ -9,6 +9,7 @@
     --tertiary-color: #fff;
     --blue-color: #27b9c2;
     --yellow-color: #ffc80a;
+    --white-bg: #ffffff;
 }
 
 *{
@@ -17,17 +18,46 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 20px;
+}
+
+.padding{
+    padding: 3rem 5rem;
+}
+
+.padding-img{
+    padding: 1rem 2rem 0 2rem;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
 p{
     font-family: var(--primary-font);
+    font-size: 0.8rem;
+    color: var(--secondary-color);
 }
 
 h2{
     font-family: var(--secondary-font);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 h4{
     font-family: var(--tertiary-font);
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+}
+
+.blue-link{
+    color: var(--blue-color);
+}
+
+.icon{
+    font-size: 0.8rem;
 }
