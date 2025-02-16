@@ -1,0 +1,33 @@
+:root{
+    /* ?================= FONTS =================*/
+    --primary-font: "Open Sans", serif;
+    --secondary-font: "Arvo", serif;
+    --tertiary-font: "Montserrat", serif;
+    /* ?================= COLORS =================*/
+    --primary-color: #333333;
+    --secondary-color: #9fa3a7;
+    --tertiary-color: #fff;
+    --blue-color: #27b9c2;
+    --yellow-color: #ffc80a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: var(--primary-font);
+}
+
+h2{
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+}
+
+h4{
+    font-family: var(--tertiary-font);
+    font-weight: 700;
+    font-size: 1rem;
+}
