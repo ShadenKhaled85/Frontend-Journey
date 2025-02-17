@@ -18,6 +18,7 @@
         "mobile-content mobile-img"
         "keyboard joystick"
         "pc apple-content"
+        "twitter floppy-disk" 
         "laptop floppy-disk" 
         ;
         grid-template-columns: 50% 50%;
@@ -31,7 +32,8 @@
         "mobile-content mobile-img"
         "keyboard joystick"
         "pc apple-content"
-        "laptop floppy-disk" 
+        "twitter floppy-disk" 
+        "laptop floppy-disk"         
         ;
         grid-template-columns: 50% 50%;
     }
