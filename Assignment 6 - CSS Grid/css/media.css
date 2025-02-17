@@ -1,0 +1,39 @@
+@media screen and (max-width:678px){
+    .container{
+        grid-template-areas: 
+        "main-header main-header"
+        "mobile-content mobile-img"
+        "keyboard joystick" 
+        "pc apple-content"
+        "laptop floppy-disk"
+        ;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .container{
+        grid-template-areas: 
+        "main-header main-header"
+        "mobile-content mobile-img"
+        "keyboard joystick"
+        "pc apple-content"
+        "laptop floppy-disk" 
+        ;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .container{
+        grid-template-areas: 
+        "main-header main-header"
+        "mobile-content mobile-img"
+        "keyboard joystick"
+        "pc apple-content"
+        "laptop floppy-disk" 
+        ;
+        grid-template-columns: 50% 50%;
+    }
+}
+

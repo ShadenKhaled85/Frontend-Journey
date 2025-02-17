@@ -6,17 +6,16 @@
     display: grid;
     grid-template-areas: 
     "mobile-content mobile-img main-header main-header"
-    "mobile-content mobile-img main-header main-header"
     "keyboard pc apple-content floppy-disk"
-    "keyboard pc apple-content floppy-disk"
-    "joystick laptop laptop floppy-disk"
     "joystick laptop laptop floppy-disk"
     ;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto;
 }
 
 /* ?=================== FIRST ROW =================== */
+
+/* *======= MOBILE ======= */
 
 .mobile-content{
     grid-area: mobile-content;
@@ -33,6 +32,8 @@
     background-color: var(--white-bg);
 }
 
+/* *======= MAIN HEADER ======= */
+
 .main-header{
     grid-area: main-header;
     background-color: whitesmoke;
@@ -43,12 +44,15 @@
 .main-header h1{
     font-family: var(--secondary-font);
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 2.6rem;
     color: var(--primary-color);
 }
 
 .main-header a{
     color: var(--blue-color);
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0;
     font-weight: 400;
 } 
 
@@ -57,6 +61,7 @@
 /* *======= KEYBOARD ======= */
 
 .keyboard{
+    grid-area: keyboard;
     background-color: #f05638;
 }
 
@@ -76,6 +81,7 @@
 /* *======= PC ======= */
 
 .pc{
+    grid-area: pc;
     background-color: var(--white-bg); 
     margin-top: var(--margin-top);
     justify-content: space-between;
@@ -89,7 +95,6 @@
     width: 140%;
     margin-top: var(--margin-top);
     align-items: flex-end;
-
 }
 
 .pc-content{
@@ -100,6 +105,7 @@
 /* *======= APPLE ======= */
 
 .container .apple-content{
+    grid-area: apple-content;
     background-color: var(--white-bg);
     gap: var(--gap);
     padding-left: 0;
@@ -117,20 +123,126 @@
 /* *======= FLOPPY DISK ======= */
 
 .floppy-disk{
+    grid-area: floppy-disk;
     background-color: #8f76bc;
+    align-items: center;
+    padding-block: 3rem;
 }
 
-.img-wrapper{
-    background-color: #f05638;
-    width: 100%; 
+.floppy-disk .img-wrapper{
+    background-color: rgba(0, 0, 0, 0.09);
     border-radius: 50%;
+    height: 400px;
+    width: 100%;
 }
 
-/* .floppy-img img{
+.floppy-img img{
     width: 70%;
-}  */
+    position: relative;
+    top: 0.8rem;
+} 
 
 .floppy-disk .flag img{
-    width: 4%;
+    width: 12%;
     display: inline-block;
 }
+
+.floppy-disk .flag{
+    background-color: #ffffff17;
+    gap: 0.4rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 1.4rem;
+}
+
+.floppy-disk .floppy-content h2{
+    font-weight: 700;
+    color: var(--white-bg);
+    font-size: 1.8rem;
+    margin-bottom: var(--margin-bottom);
+}
+
+.floppy-content p{
+    color: var(--white-bg);
+    text-align: center;
+}
+
+.floppy-disk .button{
+    background-color: var(--yellow-color);
+    padding: 1rem 1.5rem;
+    border-radius: 3rem;
+}
+
+.floppy-disk .button a{
+    color: black;
+}
+
+/* ?=================== THIRD ROW =================== */
+
+/* *======= JOYSTICK ======= */
+.joystick{
+    grid-area: joystick;
+    background-color: var(--white-bg);
+    overflow: hidden;
+}
+
+.joystick-img{
+    margin-top: var(--margin-top);
+}
+
+.joystick-img img{
+    position: relative;
+    left: -10%;
+    gap: var(--gap);
+}
+
+.joystick a{
+    color: var(--blue-color);
+    padding: 1rem 1.5rem;
+}
+
+
+/* *======= LAPTOP ======= */
+.laptop{
+    grid-area: laptop;
+    background-color: #93b6b7;
+    padding-inline: var(--padding-inline);
+    padding-top: var(--padding-top);
+    overflow: hidden;
+}
+
+.laptop span{
+    background-color: #fa684f;
+    width: 15%;
+    padding: 0.2rem ;
+    border-radius: 0.2rem;
+    text-align: center;
+    font-size: 0.4rem;
+}
+
+.laptop-content{
+    margin-top: 1rem;
+}
+
+.laptop-content h2{
+    color: var(--white-bg);
+    font-weight: 700;
+}
+
+.laptop-img-wrapper{
+    position: relative;
+}
+
+.ux-img{
+    width: 85%;
+}
+
+.laptop-img{
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: -8%;
+}
+
+/* ?=================== FOURTH ROW =================== */
+
+/* *======= TWITTER ======= */
