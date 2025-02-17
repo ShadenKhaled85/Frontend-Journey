@@ -10,10 +10,11 @@
     --blue-color: #27b9c2;
     --yellow-color: #ffc80a;
     --white-bg: #ffffff;
-    /* ?================= PADDING =================*/
-    --padding-inline: 2.4rem;
+    /* ?================= PADDING & MARGIN =================*/
+    --padding-inline: 3rem;
     --padding-block: 1.4rem;
     --padding-top: 2rem;
+    --margin-top: 2rem; 
     /* ?================= FLEX =================*/
     --gap: 1.2rem;
     /* ?================= TEXT =================*/
@@ -85,6 +86,7 @@ h4{
 
 .blue-link{
     color: var(--blue-color);
+    cursor: pointer;
 }
 
 .icon{
@@ -96,4 +98,5 @@ h4{
     font-weight: 700;
     font-size: 0.8rem;
     font-family: var(--primary-font);
+    cursor: pointer;
 }

@@ -9,12 +9,15 @@
     "mobile-content mobile-img main-header main-header"
     "keyboard pc apple-content floppy-disk"
     "keyboard pc apple-content floppy-disk"
+    "joystick laptop laptop floppy-disk"
+    "joystick laptop laptop floppy-disk"
     ;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
 }
 
 /* ?=================== FIRST ROW =================== */
+
 .mobile-content{
     grid-area: mobile-content;
     background-color: var(--white-bg);
@@ -51,6 +54,8 @@
 
 /* ?=================== SECOND ROW =================== */
 
+/* *======= KEYBOARD ======= */
+
 .keyboard{
     background-color: #f05638;
 }
@@ -61,33 +66,69 @@
 }
 
 .keyboard-img{
-    padding-top: var(--padding-top);
+    margin-top: var(--margin-top);
 }   
 
 .keyboard a{
     color: var(--yellow-color);
 }
 
+/* *======= PC ======= */
+
 .pc{
-    background-color: chocolate; 
-    padding-top: var(--padding-top);
+    background-color: var(--white-bg); 
+    margin-top: var(--margin-top);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .pc-img img{
     position: relative;
+    left: -65%;
+    width: 140%;
+    margin-top: var(--margin-top);
+    align-items: flex-end;
+
 }
 
 .pc-content{
     gap: var(--gap);
+    padding-inline: 5rem;
 }
 
-.apple-content{
-    background-color: teal;
+/* *======= APPLE ======= */
+
+.container .apple-content{
+    background-color: var(--white-bg);
+    gap: var(--gap);
+    padding-left: 0;
+    padding-right: 5rem;
 }
+
+.apple-content p{
+    margin-top: var(--margin-top);
+}
+
+.apple-content a{
+    color: var(--blue-color);
+}
+
+/* *======= FLOPPY DISK ======= */
 
 .floppy-disk{
-    background-color: crimson;
+    background-color: #8f76bc;
 }
+
+.img-wrapper{
+    background-color: #f05638;
+    width: 100%; 
+    border-radius: 50%;
+}
+
+/* .floppy-img img{
+    width: 70%;
+}  */
 
 .floppy-disk .flag img{
     width: 4%;
