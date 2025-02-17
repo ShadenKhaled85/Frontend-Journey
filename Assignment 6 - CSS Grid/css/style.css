@@ -1,5 +1,5 @@
 .outer-container{
-    background-color: purple;
+    background-color: var(--white-bg);
 }
 
 .container{
@@ -18,14 +18,13 @@
 .mobile-content{
     grid-area: mobile-content;
     background-color: var(--white-bg);
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+    gap: var(--gap);
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .mobile-img{
     grid-area: mobile-img;
-    display: flex;
     justify-content: center;
     align-items: flex-end;
     background-color: var(--white-bg);
@@ -34,11 +33,7 @@
 .main-header{
     grid-area: main-header;
     background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.2rem;
+    gap: var(--gap);
     text-align: center;
 }
 
@@ -52,11 +47,47 @@
 .main-header a{
     color: var(--blue-color);
     font-weight: 400;
-    
 } 
 
 /* ?=================== SECOND ROW =================== */
 
+.keyboard{
+    background-color: #f05638;
+}
+
+.keyboard-content{
+    text-align: center;
+    gap: var(--gap);
+}
+
+.keyboard-img{
+    padding-top: var(--padding-top);
+}   
+
+.keyboard a{
+    color: var(--yellow-color);
+}
+
+.pc{
+    background-color: chocolate; 
+    padding-top: var(--padding-top);
+}
+
+.pc-img img{
+    position: relative;
+}
+
+.pc-content{
+    gap: var(--gap);
+}
+
+.apple-content{
+    background-color: teal;
+}
+
+.floppy-disk{
+    background-color: crimson;
+}
 
 .floppy-disk .flag img{
     width: 4%;

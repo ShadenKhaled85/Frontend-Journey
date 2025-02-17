@@ -10,6 +10,14 @@
     --blue-color: #27b9c2;
     --yellow-color: #ffc80a;
     --white-bg: #ffffff;
+    /* ?================= PADDING =================*/
+    --padding-inline: 2.4rem;
+    --padding-block: 1.4rem;
+    --padding-top: 2rem;
+    /* ?================= FLEX =================*/
+    --gap: 1.2rem;
+    /* ?================= TEXT =================*/
+    --line-height: 1.5;
 }
 
 *{
@@ -22,16 +30,30 @@ html{
     font-size: 20px;
 }
 
-.padding{
-    padding: 3rem 5rem;
+.padding-container{
+    padding: var(--padding-block) var(--padding-inline);
 }
 
 .padding-img{
-    padding: 1rem 2rem 0 2rem;
+    padding: 2rem 2rem 0;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
 }
 
 img{
-    display: block;
+    display: inline-block;
     width: 100%;
 }
 
@@ -39,12 +61,14 @@ p{
     font-family: var(--primary-font);
     font-size: 0.8rem;
     color: var(--secondary-color);
+    line-height: var(--line-height);
 }
 
 h2{
     font-family: var(--secondary-font);
     font-size: 1.2rem;
     font-weight: 400;
+    line-height: var(--line-height);
 }
 
 h4{
@@ -54,10 +78,22 @@ h4{
     color: var(--secondary-color);
 }
 
+.white-header{
+    color: var(--white-bg);
+    font-weight: 700;
+}
+
 .blue-link{
     color: var(--blue-color);
 }
 
 .icon{
     font-size: 0.8rem;
+}
+
+.link{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8rem;
+    font-family: var(--primary-font);
 }
