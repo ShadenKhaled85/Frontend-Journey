@@ -73,22 +73,5 @@
     .laptop .mini-class {
         width: 25%; /* Make the badge larger for better visibility */
     }
-
-
 }
 
-@media screen and (max-width:1024px){
-    .container{
-        grid-template-areas: 
-        "main-header main-header"
-        "mobile-content mobile-img"
-        "keyboard joystick"
-        "pc apple-content"
-        "twitter floppy-disk" 
-        "laptop floppy-disk"      
-        "much-better much-better"
-        "tv tv"   
-        ;
-        grid-template-columns: 50% 50%;
-    }
-}
