@@ -21,6 +21,18 @@
     .much-better{
         padding: var(--padding-block) var(--padding-inline);
     }
+
+    .floppy-disk .img-wrapper{
+        max-width: 400px; /* Reduce circle size */
+    }
+    
+    .floppy-img img {
+        width: 60%;
+    }
+
+    .laptop .mini-class {
+        width: 25%; /* Make the badge larger for better visibility */
+    }
 }
 
 @media screen and (max-width:768px){
@@ -50,6 +62,19 @@
     .much-better{
         padding: var(--padding-block) var(--padding-inline);
     }
+    .floppy-disk .img-wrapper {
+        max-width: 400px; /* Reduce circle size */
+    }
+
+    .floppy-img img {
+        width: 60%;
+    }
+
+    .laptop .mini-class {
+        width: 25%; /* Make the badge larger for better visibility */
+    }
+
+
 }
 
 @media screen and (max-width:1024px){

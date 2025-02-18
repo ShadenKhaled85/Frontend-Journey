@@ -29,7 +29,8 @@
     box-sizing: border-box;
 }
 
-html{
+body,html{
+    overflow-x: hidden; /* Prevent horizontal scroll */
     font-size: 20px;
 }
 
@@ -70,8 +71,9 @@ html{
 }
 
 img{
-    display: inline-block;
+    display: block;
     width: 100%;
+    height: auto;
 }
 
 p{
