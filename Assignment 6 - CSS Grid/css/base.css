@@ -10,6 +10,7 @@
     --blue-color: #27b9c2;
     --yellow-color: #ffc80a;
     --white-bg: #ffffff;
+    --whitesmoke-bg: #f8f8f8;
     /* ?================= PADDING & MARGIN =================*/
     --padding-inline: 3rem;
     --padding-block: 1.4rem;
@@ -54,6 +55,20 @@ html{
     align-items: center;
 }
 
+/* ?================= BETTER CHOICE  & POPULAR =================*/
+.mini-class{
+    padding: 0.2rem 0.4rem ;
+    border-radius: 0.2rem;
+    text-align: center;
+    font-size: 0.4rem;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    color: var(--white-bg);
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
 img{
     display: inline-block;
     width: 100%;
@@ -88,7 +103,7 @@ span{
     font-weight: 700;
 }
 
-a, span, h4, h5, h6{
+a, span, h4, h5, h6, .mini-class{
     letter-spacing: 2.4px;
 }
 

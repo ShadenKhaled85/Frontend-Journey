@@ -6,8 +6,20 @@
         "keyboard joystick" 
         "pc apple-content"
         "laptop floppy-disk"
+        "much-better much-better"
+        "tv tv"
         ;
         grid-template-columns: 50% 50%;
+    }
+
+    .tv-img img{
+        max-width: 100%;
+        position: relative;
+        top: 0;
+    }
+
+    .much-better{
+        padding: var(--padding-block) var(--padding-inline);
     }
 }
 
@@ -20,8 +32,23 @@
         "pc apple-content"
         "twitter floppy-disk" 
         "laptop floppy-disk" 
+        "much-better much-better"
+        "tv tv"
         ;
         grid-template-columns: 50% 50%;
+    }
+
+    .floppy-disk{
+        padding-inline: var(--padding-inline);
+    }
+
+    .tv-img img{
+        max-width: 100%;
+        position: relative;
+        top: 0;
+    }
+    .much-better{
+        padding: var(--padding-block) var(--padding-inline);
     }
 }
 
@@ -33,9 +60,10 @@
         "keyboard joystick"
         "pc apple-content"
         "twitter floppy-disk" 
-        "laptop floppy-disk"         
+        "laptop floppy-disk"      
+        "much-better much-better"
+        "tv tv"   
         ;
         grid-template-columns: 50% 50%;
     }
 }
-
