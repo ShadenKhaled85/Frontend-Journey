@@ -1,0 +1,20 @@
+/* ?======================= NAVBAR =======================  */
+
+.nav-link{
+    transition: all var(--transition-duration); /* 1s allows the width goes from 0% to 50% slowly */ 
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    bottom: -3px;
+    left: 0;
+    transition: all 1s;
+}
+.nav-link:hover::before{
+    width: 50%;
+}
+
+
