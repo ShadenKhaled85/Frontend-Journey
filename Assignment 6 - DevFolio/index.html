@@ -15,32 +15,32 @@
 
     <!-- ?======================= NAVBAR ======================= -->
 
-    <nav id="navbar" class="navbar fixed-top navbar-expand-lg bg-opacity-100">
-        <div class="container-md">
-            <a class="navbar-brand fw-bold fs-3" href="#">DevFolio</a>
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg bg-opacity-100" data-bs-theme="dark">
+        <div class="container-md py-4">
+            <a class="navbar-brand fw-medium fs-3" href="#">DevFolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown" data-bs-theme="dark">
-                <ul class="navbar-nav justify-content-end ms-auto fs-6 fw-bold">
+                <ul class="navbar-nav justify-content-end ms-auto fs-6 fw-medium">
                     <li class="nav-item position-relative ms-2">
                         <a class="nav-link active" aria-current="page" href="#">HOME</a>
                     </li>
                     <li class="nav-item position-relative ms-2">
-                        <a class="nav-link" href="#">ABOUT</a>
+                        <a class="nav-link" href="#about">ABOUT</a>
                     </li>
                     <li class="nav-item position-relative ms-2">
-                        <a class="nav-link" href="#">SERVICES</a>
+                        <a class="nav-link" href="#services">SERVICES</a>
                     </li>
                     <li class="nav-item position-relative ms-2">
-                        <a class="nav-link" href="#">WORK</a>
+                        <a class="nav-link" href="#work">WORK</a>
                     </li>
                     <li class="nav-item position-relative ms-2">
-                        <a class="nav-link" href="#">BLOG</a>
+                        <a class="nav-link" href="#blog">BLOG</a>
                     </li>
                     <li class="nav-item position-relative ms-2">
-                        <a class="nav-link" href="#">CONTACT</a>
+                        <a class="nav-link" href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -49,9 +49,120 @@
 
     <!-- ?======================= HOME ======================= -->
 
-    <div class="intro" id="home home-bg-image">
-
+    <div class="intro home-bg-image" id="home">
+        <div class="overlay-intro"></div>
+        <div class="intro-content d-flex flex-column justify-content-center align-items-center gap-5 text-center">
+            <div class="container">
+                <h1 class="main-header">I am Morgan Freeman</h1>
+                <p class="main-header-content">Frontend Developer</p>
+            </div>
+        </div>
     </div>
+
+    <!-- ?======================= ABOUT ======================= -->
+    <section id="about" class="section-pt-4">
+        <div class="container">
+            <div class="row bg-white p-lg-5 py-sm-5 px-sm-4 about-box-shadow">
+                <div class="col-sm-12 col-md-6 pe-md-4">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-5">
+                            <div class="about-img">
+                                <img class=" rounded-2" src="images/testimonial-2.jpg" alt="testimonial-2">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-7">
+                            <div class="about-info">
+                                <div class="about-info">
+                                    <p><span class="about-title">Name: </span> <span>Morgan Freeman</span></p>
+                                    <p><span class="about-title">Profile: </span> <span>full stack developer</span></p>
+                                    <p><span class="about-title">Email: </span> <span>contact@example.com</span></p>
+                                    <p><span class="about-title">Phone: </span> <span>(617) 557-0089</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-skills">
+                        <p class="about-title" style="color: #1e1e1e;">Skill</p>
+                        <div class="bar-content">
+                            <span>HTML</span>
+                            <p>85%</p>
+                        </div>
+                        <div class="progress rounded-0 mb-2">
+                            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                        <div class="bar-content">
+                            <span>CSS3</span>
+                            <p>75%</p>
+                        </div>
+                        <div class="progress rounded-0 mb-2">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                        <div class="bar-content">
+                            <span>PHP</span>
+                            <p>50%</p>
+                        </div>
+                        <div class="progress rounded-0 mb-2">
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                        <div class="bar-content">
+                            <span>JAVASCRIPT</span>
+                            <p>90%</p>
+                        </div>
+                        <div class="progress rounded-0 mb-2">
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <div class="about-me-content pt-4 pt-md-0">
+                        <div class="about-me-box mb-5">
+                            <h2 class="about-me">About me</h2>
+                        </div>
+
+                        <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat,
+                            accumsan
+                            id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec,
+                            egestas
+                            non nisi. Nulla porttitor accumsan tincidunt.
+                        </p>
+                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget
+                            felis
+                            porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                            porttitor at sem.</p>
+                        <p>Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id
+                            enim.
+                            Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh
+                            pulvinar a.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
