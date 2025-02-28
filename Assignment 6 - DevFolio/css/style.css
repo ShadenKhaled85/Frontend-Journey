@@ -30,13 +30,13 @@ nav a{
     color: var(--home-color);
 }
 
-.home-bg-image{
+/* .home-bg-image{
     background-image: url(../images/intro-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
+} */
 
 .intro .overlay-intro{
     background-color: rgba(0, 0, 0, 0.5);
@@ -103,3 +103,83 @@ nav a{
     font-size: 1.4rem;
     font-weight: 300;
 }
+
+/* ?======================= SERVICES =======================  */
+
+.blue-line{
+    width: 40px;
+    height: 5px;
+    background-color: var(--blue-color);
+    margin: 0 auto;
+}
+
+.bold-header{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.service-icon{
+    font-size: 3.5rem;
+}
+
+.icon-circle{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: 10px solid var(--blue-color);
+    transition: all var(--transition-duration);
+}
+
+.icon-circle:hover{
+    color: white;
+    border: 10px solid #d2d9fc;
+    background-color: var(--blue-color);
+}
+
+/* ?======================= FOUR ICONS =======================  */
+
+/* .office-bg{
+    background-image: url(../images/office-bg.jpg);
+    background-size: cover;
+    background-position: center;    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+} */
+
+#fourIcons{
+    color: white;
+} 
+
+.blue-overlay{
+    position: absolute;
+    background-color: var(--blue-color);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.7;
+}
+
+.white-circle-icon{
+    width: 80px;
+    height: 80px;
+    border: 10px solid rgba(255, 255, 255, 0.942);
+    border-radius: 50%;
+}
+
+.four-icon{
+    font-size: 1.5rem;
+    color: white;
+    position: relative;
+}
+
+.four-icon-content h3, .four-icon-content p{
+    color: white !important;
+    font-weight: 400;
+}
+
+
+/* ?======================= PORTFOLIO =======================  */
+
+

@@ -5,6 +5,7 @@
     /* ?================== COLORS ================== */
     --home-color: #fff;
     --primary-bg-color: #f8f9fa;
+    --blue-bg-color: #0078ff;
     --primary-font-color: #4e4e4e;
     --secondary-font-color: #1e1e1e;
     --blue-color: #0078ff;
@@ -25,6 +26,13 @@ body{
     background-color: var(--primary-bg-color);
 }
 
+.fixed-bg{
+    background-size: cover;
+    background-position: center;    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 p:not(.main-header-content){
     color: var(--primary-font-color);
 }
@@ -33,7 +41,15 @@ p{
     line-height: var(--line-height);
 }
 
+h2,h3,h4,h5,h6{
+    color: var(--secondary-font-color);
+}
+
 .section-pt-4{
     padding-top: 4rem;
+}
+
+.box-shadow{
+    box-shadow: 0 0 8px 20px rgba(0, 0, 0, 0), 0 0 20px rgba(0, 0, 0, 0.066);
 }
 
