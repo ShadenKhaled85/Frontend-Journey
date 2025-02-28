@@ -176,12 +176,12 @@ nav a{
     overflow: hidden; /* to cut any extras from the image */
 }
 
-.card img{
+.card img[alt="portfolio"]{
     transition: all 1s;
     border-style: none;
 }
 
-.card:hover img{
+.card:hover img[alt="portfolio"]{
     transform: scale(1.3);
 }
 
@@ -238,4 +238,36 @@ nav a{
 .carousel-indicators [data-bs-target]{
     width: 30px;
     height: 10px;
+}
+
+ /* ?======================= BLOG =======================  */
+
+.blog-img{
+    position: relative;
+}
+
+.blog-blue-box{
+    background-color: var(--blue-color);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+    border-radius: 0.4rem;
+}
+
+.blog-footer-img{
+    height: 40px;
+}
+
+.morgan-span{
+    transition: all var(--transition-duration);
+    cursor: pointer;
+}
+
+.morgan-span:hover{
+    color: var(--blue-color);
 }
