@@ -62,6 +62,179 @@ nav a{
     font-weight: var(--font-weight-secondary);
 }
 
+/* ?====== HOME ANIMATION ======*/
+.main-header-animation {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #fff !important;
+    overflow: hidden; /* Ensures the text doesn't overflow during animation */
+    white-space: nowrap; /* Prevents text from wrapping */
+    position: relative; /* Required for the cursor positioning */
+}
+
+.animated-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing-deleting 12s infinite; /* Total animation duration */
+}
+
+@keyframes typing-deleting {
+    /* Phase 1: Delete "CEO DevFolio" letter by letter */
+    0% {
+        width: 11ch; /* Width of "CEO DevFolio" */
+    }
+    16.66% {
+        width: 0; /* Text fully deleted */
+    }
+
+    /* Phase 2: Write "Web Developer" letter by letter */
+    16.67% {
+        width: 0; /* Start writing */
+    }
+    33.33% {
+        width: 13ch; /* Width of "Web Developer" */
+    }
+
+    /* Phase 3: Delete "Web Developer" letter by letter */
+    33.34% {
+        width: 13ch; /* Full text visible */
+    }
+    50% {
+        width: 0; /* Text fully deleted */
+    }
+
+    /* Phase 4: Write "Frontend Developer" letter by letter */
+    50.01% {
+        width: 0; /* Start writing */
+    }
+    66.66% {
+        width: 18ch; /* Width of "Frontend Developer" */
+    }
+
+    /* Phase 5: Delete "Frontend Developer" letter by letter */
+    66.67% {
+        width: 18ch; /* Full text visible */
+    }
+    83.33% {
+        width: 0; /* Text fully deleted */
+    }
+
+    /* Phase 6: Write "CEO DevFolio" letter by letter */
+    83.34% {
+        width: 0; /* Start writing */
+    }
+    100% {
+        width: 11ch; /* Text fully written */
+    }
+}
+
+/* Simulate text changes */
+.animated-text::before {
+    content: "";
+    animation: change-text 12s infinite;
+}
+
+@keyframes change-text {
+    /* Phase 1: Show "CEO DevFolio" */
+    0%, 16.66% {
+        content: "CEO DevFolio";
+    }
+
+    /* Phase 2: Show "Web Developer" */
+    16.67%, 33.33% {
+        content: "Web Developer";
+    }
+
+    /* Phase 3: Show "Web Developer" */
+    33.34%, 50% {
+        content: "Web Developer";
+    }
+
+    /* Phase 4: Show "Frontend Developer" */
+    50.01%, 66.66% {
+        content: "Frontend Developer";
+    }
+
+    /* Phase 5: Show "Frontend Developer" */
+    66.67%, 83.33% {
+        content: "Frontend Developer";
+    }
+
+    /* Phase 6: Show "CEO DevFolio" */
+    83.34%, 100% {
+        content: "CEO DevFolio";
+    }
+}
+
+/* Blinking cursor */
+.animated-text::after {
+    content: "|";
+    display: inline-block;
+    width: 0;
+    animation: blink-cursor 0.75s infinite, move-cursor 12s infinite;
+}
+
+@keyframes blink-cursor {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes move-cursor {
+    /* Phase 1: Delete "CEO DevFolio" */
+    0% {
+        transform: translateX(11ch); /* Move cursor to the end of "CEO DevFolio" */
+    }
+    16.66% {
+        transform: translateX(0); /* Move cursor to the start */
+    }
+
+    /* Phase 2: Write "Web Developer" */
+    16.67% {
+        transform: translateX(0); /* Start writing */
+    }
+    33.33% {
+        transform: translateX(13ch); /* Move cursor to the end of "Web Developer" */
+    }
+
+    /* Phase 3: Delete "Web Developer" */
+    33.34% {
+        transform: translateX(13ch); /* Move cursor to the end of "Web Developer" */
+    }
+    50% {
+        transform: translateX(0); /* Move cursor to the start */
+    }
+
+    /* Phase 4: Write "Frontend Developer" */
+    50.01% {
+        transform: translateX(0); /* Start writing */
+    }
+    66.66% {
+        transform: translateX(18ch); /* Move cursor to the end of "Frontend Developer" */
+    }
+
+    /* Phase 5: Delete "Frontend Developer" */
+    66.67% {
+        transform: translateX(18ch); /* Move cursor to the end of "Frontend Developer" */
+    }
+    83.33% {
+        transform: translateX(0); /* Move cursor to the start */
+    }
+
+    /* Phase 6: Write "CEO DevFolio" */
+    83.34% {
+        transform: translateX(0); /* Start writing */
+    }
+    100% {
+        transform: translateX(11ch); /* Move cursor to the end of "CEO DevFolio" */
+    }
+}
+
 /* ?======================= ABOUT ======================= */
 
 #about span{
@@ -167,6 +340,10 @@ nav a{
 
 .portfolio-img{
     overflow: hidden; /* to cut any extras from the image */
+}
+
+.card{
+    cursor: pointer;
 }
 
 .card img[alt="portfolio"]{
