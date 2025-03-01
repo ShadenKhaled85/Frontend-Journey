@@ -106,13 +106,6 @@ nav a{
 
 /* ?======================= SERVICES =======================  */
 
-.blue-line{
-    width: 40px;
-    height: 5px;
-    background-color: var(--blue-color);
-    margin: 0 auto;
-}
-
 .bold-header{
     font-size: 2.5rem;
     font-weight: 700;
@@ -240,7 +233,7 @@ nav a{
     height: 10px;
 }
 
- /* ?======================= BLOG =======================  */
+/* ?======================= BLOG =======================  */
 
 .blog-img{
     position: relative;
@@ -270,4 +263,56 @@ nav a{
 
 .morgan-span:hover{
     color: var(--blue-color);
+}
+
+/* ?======================= CONTACT =======================  */
+
+.contact-container{
+    position: relative;
+}
+
+.form-blue-underline{
+    height: 4px;
+    width: 20%;
+    background-color: var(--blue-color);
+}
+
+.form-btn {
+    padding: .9rem 2.3rem;
+    font-size: 1.2rem;
+}
+
+.touch-content p{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.touch-icons i{
+    color: var(--blue-color);
+}
+
+.touch-icons span{
+    color: var(--primary-font-color);
+}
+
+.social-media-icons i{
+    font-size: 1.8rem;
+}
+
+.social-circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 4px solid var(--blue-color);
+    transition: all var(--transition-duration);
+}
+
+.social-circle:hover{
+    color: white;
+    border: 4px solid #d2d9fc;
+    background-color: var(--blue-color);
+}
+
+.footer, .footer p{
+    color: white !important;
 }

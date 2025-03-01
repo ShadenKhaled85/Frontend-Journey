@@ -43,6 +43,13 @@ body{
     opacity: 0.7;
 }
 
+.blue-line{
+    width: 40px;
+    height: 5px;
+    background-color: var(--blue-color);
+    margin: 0 auto;
+}
+
 p:not(.main-header-content){
     color: var(--primary-font-color);
 }
