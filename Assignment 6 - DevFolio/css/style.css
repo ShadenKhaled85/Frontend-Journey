@@ -200,13 +200,13 @@ nav a{
     font-size: 2.5rem;
 }
 
-/* ?======================= SLIDER =======================  */
+/* ?======================= SLIDDER =======================  */
 
-#slider .carousel-caption h5, .carousel-caption p, .carousel-icon i{
+#slidder .carousel-caption h5, .carousel-caption p, .carousel-icon i{
     color: white !important
 }
 
-.slider{
+.slidder{
     position: relative;
 }
 
