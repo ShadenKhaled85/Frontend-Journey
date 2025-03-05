@@ -1,0 +1,132 @@
+:root{
+    /* ?================= FONTS =================*/
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "Montserrat", sans-serif;
+    /* ?================= COLORS =================*/
+    --primary-color: ##748182;
+    --secondary-color: #343434;
+    --tertiary-color: #fff;
+
+    /* ?================= PADDING & MARGIN =================*/
+    --padding-inline: 3rem;
+    --padding-block: 1.4rem;
+    --padding-top: 2rem;
+    --margin-top: 2rem; 
+    --margin-bottom: 1rem;
+    /* ?================= FLEX =================*/
+    --gap: 1.2rem;
+    /* ?================= TEXT =================*/
+    --line-height: 1.6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+html{
+    scroll-behavior: smooth;
+} */
+
+body,html{
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    font-size: 20px;
+}
+
+.padding-container{
+    padding: var(--padding-block) var(--padding-inline);
+}
+
+.padding-img{
+    padding: 2rem 2rem 0;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
+/* ?================= BETTER CHOICE  & POPULAR =================*/
+.mini-class{
+    padding: 0.2rem 0.4rem ;
+    border-radius: 0.2rem;
+    text-align: center;
+    font-size: 0.4rem;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    color: var(--white-bg);
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+p{
+    font-family: var(--primary-font);
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+    line-height: var(--line-height);
+}
+
+h2{
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: var(--line-height);
+}
+
+h4{
+    font-family: var(--tertiary-font);
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+}
+
+span{
+    display: inline-block;
+    font-family: var(--primary-font);
+    font-size: 0.6rem;
+    color: var(--white-bg);
+    font-weight: 700;
+}
+
+a, span, h4, h5, h6, .mini-class{
+    letter-spacing: 2.4px;
+}
+
+.white-header{
+    color: var(--white-bg);
+    font-weight: 700;
+}
+
+.blue-link{
+    color: var(--blue-color);
+    cursor: pointer;
+}
+
+.icon{
+    font-size: 0.8rem;
+}
+
+.link{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.7rem;
+    font-family: var(--primary-font);
+    cursor: pointer;
+}
