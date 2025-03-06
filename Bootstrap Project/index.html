@@ -12,14 +12,14 @@
     <title>Daniels</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
 
     <!-- ?============================================= NAVBAR ============================================= -->
 
     <nav id="navbar" class="navbar nav-underline fixed-top navbar-expand-lg fixed-bg" data-bs-theme="dark">
         <div class="container-md py-4">
             <div class="nav-header d-flex justify-content-between w-100">
-                <a class="navbar-brand fw-bold fs-5 nav-header-font" href="#">DANIELS</a>
+                <a class="navbar-brand fw-bold fs-5" href="#">DANIELS</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown" data-bs-theme="dark">
                 <ul class="navbar-nav justify-content-end ms-auto fs-6 fw-medium">
                     <li class="nav-item ms-3">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item ms-3">
                         <a class="nav-link" href="#about">About</a>
@@ -910,6 +910,7 @@
     </section>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 
 </html>

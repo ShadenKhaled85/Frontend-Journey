@@ -1,15 +1,36 @@
 /* ?============================================= NAVBAR =============================================  */
 
+/* *========= Default navbar styles ========= */
+.navbar {
+    background-color: transparent; /* Transparent background by default */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
 nav a{
     color: var(--tertiary-color) !important;
 }
 
-.nav-header-font{
+.navbar-brand{
     font-family: var(--secondary-font);
 }
 
 .navbar-nav > li{
     font-family: var(--primary-font);
+}
+
+/* *========= Navbar styles when scrolled ========= */
+.navbar.scrolled {
+    background-color: white; /* White background when scrolled */
+}
+
+/* Adjust text color for scrolled navbar */
+.navbar.scrolled .nav-link {
+    color: black !important; /* Change text color to black */
+}
+
+.navbar.scrolled .navbar-brand {
+    color: black !important; /* Change brand text color to black */
+    font-family: var(--secondary-font);
 }
 
 /* ?============================================= HOME =============================================  */
