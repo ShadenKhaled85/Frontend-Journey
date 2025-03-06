@@ -150,6 +150,10 @@ nav a{
     background-image: url(../images/dots.png);
 }
 
+.progress{
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2); /* Inside black shadow */
+}
+
 .progress-bar{
     position: relative;
 }
