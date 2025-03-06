@@ -41,10 +41,10 @@
                         <a class="nav-link" href="#work">Works</a>
                     </li>
                     <li class="nav-item ms-3">
-                        <a class="nav-link" href="#blog">Clients</a>
+                        <a class="nav-link" href="#clients">Clients</a>
                     </li>
                     <li class="nav-item ms-3">
-                        <a class="nav-link" href="#contact">Team</a>
+                        <a class="nav-link" href="#team">Team</a>
                     </li>
                     <li class="nav-item ms-3">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -57,7 +57,7 @@
     <!-- ?======================= HOME ======================= -->
 
     <section id="home">
-        <div class="intro fixed-bg" id="home" style="background-image: url(images/bg.jpg);">
+        <div class="intro fixed-bg" style="background-image: url(images/bg.jpg);">
             <div class="overlay-intro"></div>
             <div class="intro-content d-flex flex-column justify-content-center align-items-center gap-5 text-center">
                 <div class="container">
@@ -94,7 +94,7 @@
     <!-- ?======================= ABOUT ======================= -->
 
     <section id="about">
-        <div class="container my-5">
+        <div class="container py-5">
             <div class="row gx-5">
                 <div class="col-lg-5 col-sm-12">
                     <div class="about-card-img my-5">
@@ -155,6 +155,456 @@
     </section>
 
     <!-- ?======================= SERVICES ======================= -->
+
+    <section id="services" class="whitesmoke-bg p-5">
+        <div class="container py-5">
+            <div class="section-header d-flex justify-content-center align-items-center mb-5">
+                <h3>Services.</h3>
+            </div>
+            <div class="row row-cols-lg-3 row-cols-sm-1 gy-5 mb-4">
+                <div class="col">
+                    <div
+                        class="service-card d-flex flex-column justify-content-center align-items-center gap-2 text-center box-shadow white-bg p-5">
+                        <div class="service-icon service-circle d-flex justify-content-center align-items-center mb-2">
+                            <i class="fa-solid fa-laptop" style="font-size: 1.6rem;"></i>
+                        </div>
+                        <h4>Web Design</h4>
+                        <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy
+                            text ever</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div
+                        class="service-card d-flex flex-column justify-content-center align-items-center gap-2 text-center box-shadow white-bg p-5">
+                        <div class="service-icon service-circle d-flex justify-content-center align-items-center mb-2">
+                            <i class="fa-solid fa-bullhorn" style="font-size: 1.6rem;"></i>
+                        </div>
+                        <h4>Branding</h4>
+                        <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy
+                            text ever</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div
+                        class="service-card d-flex flex-column justify-content-center align-items-center gap-2 text-center box-shadow white-bg p-5">
+                        <div class="service-icon service-circle d-flex justify-content-center align-items-center mb-2">
+                            <i class="fa-solid fa-umbrella" style="font-size: 1.6rem;"></i>
+                        </div>
+                        <h4>Development</h4>
+                        <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy
+                            text ever</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-lg-3 row-cols-sm-1 gy-5 mb-4">
+                <div class="col">
+                    <div
+                        class="service-card d-flex flex-column justify-content-center align-items-center gap-2 text-center box-shadow white-bg p-5">
+                        <div class="service-icon service-circle d-flex justify-content-center align-items-center mb-2">
+                            <i class="fa-regular fa-gem" style="font-size: 1.6rem;"></i>
+                        </div>
+                        <h4>Creative Design</h4>
+                        <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy
+                            text ever</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div
+                        class="service-card d-flex flex-column justify-content-center align-items-center gap-2 text-center box-shadow white-bg p-5">
+                        <div class="service-icon service-circle d-flex justify-content-center align-items-center mb-2">
+                            <i class="fa-solid fa-desktop" style="font-size: 1.6rem;"></i>
+                        </div>
+                        <h4>Fully Responsive</h4>
+                        <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy
+                            text ever</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div
+                        class="service-card d-flex flex-column justify-content-center align-items-center gap-2 text-center box-shadow white-bg p-5">
+                        <div class="service-icon service-circle d-flex justify-content-center align-items-center mb-2">
+                            <i class="fa-solid fa-camera" style="font-size: 1.6rem;"></i>
+                        </div>
+                        <h4>Retina Ready</h4>
+                        <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy
+                            text ever</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ?======================= PORTFOLIO ======================= -->
+
+    <section id="works" class="p-5">
+        <div class="container py-5">
+            <div class="section-header d-flex justify-content-center align-items-center mb-5">
+                <h3>Portfolio.</h3>
+            </div>
+
+            <!-- ?======= NAVS & TABS ======= -->
+            <div class="portfolio-categories">
+                <ul class="nav nav-underline d-flex justify-content-center gap-5 mb-5" id="tabs" role="tablist">
+                    <li class="nav-item " role="presentation">
+                        <button class="nav-link text-black fw-bold tab-hover active" id="tab-all" data-bs-toggle="tab"
+                            data-bs-target="#all" type="button" role="tab" aria-controls="all"
+                            aria-selected="true">All</button>
+                    </li>
+                    <li class="nav-item " role="presentation">
+                        <button class="nav-link text-black fw-bold tab-hover" id="tab-brand" data-bs-toggle="tab"
+                            data-bs-target="#brand" type="button" role="tab" aria-controls="brand"
+                            aria-selected="false">Brand</button>
+                    </li>
+                    <li class="nav-item " role="presentation">
+                        <button class="nav-link text-black fw-bold tab-hover" id="tab-design" data-bs-toggle="tab"
+                            data-bs-target="#design" type="button" role="tab" aria-controls="design"
+                            aria-selected="false">Design</button>
+                    </li>
+                    <li class="nav-item " role="presentation">
+                        <button class="nav-link text-black fw-bold tab-hover" id="tab-graphic" data-bs-toggle="tab"
+                            data-bs-target="#graphic" type="button" role="tab" aria-controls="graphic"
+                            aria-selected="false">Graphic</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+
+                    <!-- ?================== ALL TAB START================== -->
+
+                    <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="tab-all">
+                        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+                            <div class="col">
+                                <div class="portfolio-card">
+                                    <div class="port-img-wrapper">
+                                        <img src="images/portfolio/port-1.jpg" alt="port">
+                                        <div
+                                            class="port-overlay d-flex flex-column justify-content-center align-items-center">
+                                            <h6>WEB DESIGN</h6>
+                                            <div class="port-overlay-icons d-flex gap-2">
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-link " style="font-size: 1rem;"></i>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-magnifying-glass-plus "
+                                                        style="font-size: 1rem;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="portfolio-card">
+                                    <div class="port-img-wrapper">
+                                        <img src="images/portfolio/port-2.jpg" alt="port">
+                                        <div
+                                            class="port-overlay d-flex flex-column justify-content-center align-items-center">
+                                            <h6>WEB DESIGN</h6>
+                                            <div class="port-overlay-icons d-flex gap-2">
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-link " style="font-size: 1rem;"></i>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-magnifying-glass-plus "
+                                                        style="font-size: 1rem;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="portfolio-card">
+                                    <div class="port-img-wrapper">
+                                        <img src="images/portfolio/port-3.jpg" alt="port">
+                                        <div
+                                            class="port-overlay d-flex flex-column justify-content-center align-items-center">
+                                            <h6>WEB DESIGN</h6>
+                                            <div class="port-overlay-icons d-flex gap-2">
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-link " style="font-size: 1rem;"></i>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-magnifying-glass-plus "
+                                                        style="font-size: 1rem;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="portfolio-card">
+                                    <div class="port-img-wrapper">
+                                        <img src="images/portfolio/port-4.jpg" alt="port">
+                                        <div
+                                            class="port-overlay d-flex flex-column justify-content-center align-items-center">
+                                            <h6>WEB DESIGN</h6>
+                                            <div class="port-overlay-icons d-flex gap-2">
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-link " style="font-size: 1rem;"></i>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-magnifying-glass-plus "
+                                                        style="font-size: 1rem;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="portfolio-card">
+                                    <div class="port-img-wrapper">
+                                        <img src="images/portfolio/port-5.jpg" alt="port">
+                                        <div
+                                            class="port-overlay d-flex flex-column justify-content-center align-items-center">
+                                            <h6>WEB DESIGN</h6>
+                                            <div class="port-overlay-icons d-flex gap-2">
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-link " style="font-size: 1rem;"></i>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-magnifying-glass-plus "
+                                                        style="font-size: 1rem;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="portfolio-card">
+                                    <div class="port-img-wrapper">
+                                        <img src="images/portfolio/port-6.jpg" alt="port">
+                                        <div
+                                            class="port-overlay d-flex flex-column justify-content-center align-items-center">
+                                            <h6>WEB DESIGN</h6>
+                                            <div class="port-overlay-icons d-flex gap-2">
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-link " style="font-size: 1rem;"></i>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-magnifying-glass-plus "
+                                                        style="font-size: 1rem;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ?================== ALL TAB END ================== -->
+
+
+                    <!-- ?================== BRAND TAB START ================== -->
+
+                    <div class="tab-pane fade" id="brand" role="tabpanel" aria-labelledby="tab-brand">
+                        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+                            <div class="col">
+                                <div class="portfolio-card">
+                                    <div class="port-img-wrapper">
+                                        <img src="images/portfolio/port-4.jpg" alt="port">
+                                        <div
+                                            class="port-overlay d-flex flex-column justify-content-center align-items-center">
+                                            <h6>WEB DESIGN</h6>
+                                            <div class="port-overlay-icons d-flex gap-2">
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-link " style="font-size: 1rem;"></i>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-magnifying-glass-plus "
+                                                        style="font-size: 1rem;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="portfolio-card">
+                                    <div class="port-img-wrapper">
+                                        <img src="images/portfolio/port-6.jpg" alt="port">
+                                        <div
+                                            class="port-overlay d-flex flex-column justify-content-center align-items-center">
+                                            <h6>WEB DESIGN</h6>
+                                            <div class="port-overlay-icons d-flex gap-2">
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-link " style="font-size: 1rem;"></i>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-magnifying-glass-plus "
+                                                        style="font-size: 1rem;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ?================== BRAND TAB END ================== -->
+
+
+                    <!-- ?================== DESIGN TAB START ================== -->
+
+                    <div class="tab-pane fade" id="design" role="tabpanel" aria-labelledby="tab-design">
+                        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+                            <div class="col">
+                                <div class="portfolio-card">
+                                    <div class="port-img-wrapper">
+                                        <img src="images/portfolio/port-2.jpg" alt="port">
+                                        <div
+                                            class="port-overlay d-flex flex-column justify-content-center align-items-center">
+                                            <h6>WEB DESIGN</h6>
+                                            <div class="port-overlay-icons d-flex gap-2">
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-link " style="font-size: 1rem;"></i>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-magnifying-glass-plus "
+                                                        style="font-size: 1rem;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="portfolio-card">
+                                    <div class="port-img-wrapper">
+                                        <img src="images/portfolio/port-5.jpg" alt="port">
+                                        <div
+                                            class="port-overlay d-flex flex-column justify-content-center align-items-center">
+                                            <h6>WEB DESIGN</h6>
+                                            <div class="port-overlay-icons d-flex gap-2">
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-link " style="font-size: 1rem;"></i>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-magnifying-glass-plus "
+                                                        style="font-size: 1rem;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ?================== DESIGN TAB END ================== -->
+
+
+                    <!-- ?================== GRAPHIC TAB START ================== -->
+
+                    <div class="tab-pane fade" id="graphic" role="tabpanel" aria-labelledby="tab-graphic">
+                        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
+                            <div class="col">
+                                <div class="portfolio-card">
+                                    <div class="port-img-wrapper">
+                                        <img src="images/portfolio/port-1.jpg" alt="port">
+                                        <div
+                                            class="port-overlay d-flex flex-column justify-content-center align-items-center">
+                                            <h6>WEB DESIGN</h6>
+                                            <div class="port-overlay-icons d-flex gap-2">
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-link " style="font-size: 1rem;"></i>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-magnifying-glass-plus "
+                                                        style="font-size: 1rem;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="portfolio-card">
+                                    <div class="port-img-wrapper">
+                                        <img src="images/portfolio/port-3.jpg" alt="port">
+                                        <div
+                                            class="port-overlay d-flex flex-column justify-content-center align-items-center">
+                                            <h6>WEB DESIGN</h6>
+                                            <div class="port-overlay-icons d-flex gap-2">
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-link " style="font-size: 1rem;"></i>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-magnifying-glass-plus "
+                                                        style="font-size: 1rem;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="portfolio-card">
+                                    <div class="port-img-wrapper">
+                                        <img src="images/portfolio/port-5.jpg" alt="port">
+                                        <div
+                                            class="port-overlay d-flex flex-column justify-content-center align-items-center">
+                                            <h6>WEB DESIGN</h6>
+                                            <div class="port-overlay-icons d-flex gap-2">
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-link " style="font-size: 1rem;"></i>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center port-circle dark-hover">
+                                                    <i class="fa-solid fa-magnifying-glass-plus "
+                                                        style="font-size: 1rem;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ?================== GRAPHIC TAB END ================== -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ?======================= TESTIMONIALS ======================= -->
+
+    <section id="clients">
+        <div class="container">
+
+        </div>
+    </section>
 
 
     <script src="js/bootstrap.bundle.min.js"></script>

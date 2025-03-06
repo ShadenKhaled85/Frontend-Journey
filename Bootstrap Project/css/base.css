@@ -7,6 +7,7 @@
     --secondary-color: #343434;
     --tertiary-color: #fff;
     --primary-bg-color: #fff;
+    --black-color: #000;
     --secondary-bg-color: #f8f8f8;
     /* ?================= PADDING & MARGIN =================*/
     --padding-inline: 3rem;
@@ -33,10 +34,22 @@ html{
     scroll-behavior: smooth;
 }
 
+/* ?============ IMG ============ */
+
 img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+/* ?============ BG ============ */
+
+.whitesmoke-bg{
+    background-color: var(--secondary-bg-color);
+}
+
+.white-bg{
+    background-color: var(--tertiary-color);
 }
 
 .fixed-bg{
@@ -46,26 +59,8 @@ img {
     background-attachment: fixed;
 }
 
-/* .blue-overlay{
-    position: absolute;
-    background-color: var(--blue-color);
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    opacity: 0.7;
-} */
 
-/* .blue-line{
-    width: 40px;
-    height: 5px;
-    background-color: var(--blue-color);
-    margin: 0 auto;
-} */
-
-.box-shadow-inset{
-    box-shadow: -2px 0 4px #00000069 inset;
-}
+/* ?============ HEADERS & P ============ */
 
 p{
     line-height: var(--line-height);
@@ -77,11 +72,56 @@ h1,h2,h3,h4{
     font-family: var(--secondary-font);
 }
 
+h3{
+    font-weight: 800;
+    color: var(--secondary-color);
+    font-size: 2.6rem;
+}
+
+.section-header h3{
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+}
+
+.section-header h3::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+/* ?============ ICONS & ANIMATION ============ */
+
+.light-hover, .dark-hover{
+    transition: all var(--transition-duration);
+    font-size: 0.9rem;
+}
+
+.light-hover:hover{
+    background-color: var(--tertiary-color);
+    color: black;
+}
+
+.dark-hover:hover{
+    background-color: black;
+    color: var(--tertiary-color);
+}
+
+i{
+    cursor: pointer;
+}
+
 /* .section-pt-4{
     padding-top: 4rem;
 } */
 
 .box-shadow{
     box-shadow: 0 0 8px 20px rgba(0, 0, 0, 0), 0 0 20px rgba(0, 0, 0, 0.066);
-}
+} 
 
