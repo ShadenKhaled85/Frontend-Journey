@@ -1,4 +1,4 @@
-/* ?======================= NAVBAR =======================  */
+/* ?============================================= NAVBAR =============================================  */
 
 nav a{
     color: var(--tertiary-color) !important;
@@ -12,7 +12,7 @@ nav a{
     font-family: var(--primary-font);
 }
 
-/* ?======================= HOME =======================  */
+/* ?============================================= HOME =============================================  */
 
 /* .intro {
     height: 100vh;
@@ -120,7 +120,7 @@ nav a{
     border-radius: 50%;
 }
 
-/* ?======================= ABOUT =======================  */
+/* ?============================================= ABOUT =============================================  */
 
 #about h2{
     color: var(--secondary-color);
@@ -172,7 +172,7 @@ nav a{
     font-weight: bold;
 }
 
-/* ?======================= SERVICES =======================  */
+/* ?============================================= SERVICES =============================================  */
 
 .service-circle {
     height: 70px;
@@ -191,7 +191,7 @@ nav a{
     font-weight: var(--font-weight-primary);
 }
 
-/* ?======================= PORTFOLIO =======================  */
+/* ?============================================= PORTFOLIO =============================================  */
 
 /* .portfolio-categories .tab-hover{
     transition: all var(--transition-duration);
@@ -239,8 +239,61 @@ nav a{
 }
 
 .port-circle{
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
 }
 
+/* ?============================================= TESTIMONIALS =============================================  */
+
+.slidder{
+    position: relative;
+}
+
+.carousel-img img {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    object-fit: cover; /* Ensures the image retains its aspect ratio */
+    border-radius: 50%; /* Keeps the rounded-circle effect */
+}
+
+.carousel-inner {
+    min-height: 500px; 
+}
+
+.carousel-caption {
+    position: static; /* Prevents movement */
+    z-index: 99;
+}
+
+.carousel-indicators{
+    bottom: 20%;
+    gap: 0.5rem;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--primary-color); 
+}
+
+.carousel-item h6{
+    color: var(--primary-color);
+}
+
+.carousel-item h5{
+    color: var(--secondary-color);
+}
+
+/* ?============================================= ICONS =============================================  */
+
+#icons .four-icon i{
+    font-size: 2rem;
+}
+
+#icons p{
+    font-weight: 600;
+}
+
+/* ?============================================= TEAM =============================================  */

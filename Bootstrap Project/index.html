@@ -14,9 +14,9 @@
 
 <body>
 
-    <!-- ?======================= NAVBAR ======================= -->
+    <!-- ?============================================= NAVBAR ============================================= -->
 
-    <nav id="navbar" class="navbar fixed-top navbar-expand-lg fixed-bg" data-bs-theme="dark">
+    <nav id="navbar" class="navbar nav-underline fixed-top navbar-expand-lg fixed-bg" data-bs-theme="dark">
         <div class="container-md py-4">
             <div class="nav-header d-flex justify-content-between w-100">
                 <a class="navbar-brand fw-bold fs-5 nav-header-font" href="#">DANIELS</a>
@@ -54,7 +54,7 @@
         </div>
     </nav>
 
-    <!-- ?======================= HOME ======================= -->
+    <!-- ?============================================= HOME ============================================= -->
 
     <section id="home">
         <div class="intro fixed-bg" style="background-image: url(images/bg.jpg);">
@@ -91,7 +91,7 @@
         </div>
     </section>
 
-    <!-- ?======================= ABOUT ======================= -->
+    <!-- ?============================================= ABOUT ============================================= -->
 
     <section id="about">
         <div class="container py-5">
@@ -154,7 +154,7 @@
         </div>
     </section>
 
-    <!-- ?======================= SERVICES ======================= -->
+    <!-- ?============================================= SERVICES ============================================= -->
 
     <section id="services" class="whitesmoke-bg p-5">
         <div class="container py-5">
@@ -234,7 +234,7 @@
         </div>
     </section>
 
-    <!-- ?======================= PORTFOLIO ======================= -->
+    <!-- ?============================================= PORTFOLIO ============================================= -->
 
     <section id="works" class="p-5">
         <div class="container py-5">
@@ -598,17 +598,173 @@
         </div>
     </section>
 
-    <!-- ?======================= TESTIMONIALS ======================= -->
+    <!-- ?============================================= TESTIMONIALS ============================================= -->
 
-    <section id="clients" class="whitesmoke-bg p-5">
-        <div class="container py-5">
+    <section id="clients" class="slidder whitesmoke-bg p-5">
+        <div class="container pt-5">
             <div class="section-header d-flex justify-content-center align-items-center mb-5">
                 <h3>Testimonials.</h3>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide container">
+
+                <!-- *======================= INDICATORS ======================= -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <!-- *======================= SLIDES ======================= -->
+                <div class="carousel-inner px-lg-5">
+                    <div class="carousel-item active">
+                        <div
+                            class=" carousel-slide d-flex flex-column justify-content-center align-items-center gap-2 pt-5">
+                            <div class="carousel-img">
+                                <img src="images/testimonial.jpg" class="rounded-circle" alt="test">
+                            </div>
+                            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center ">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At harum molestiae facilis
+                                    cumque explicabo, ipsam sapiente hic praesentium quos corrupti eaque, cupiditate
+                                    aperiam vel error?</p>
+                                <h5>Alex Smith</h5>
+                                <h6>Envato Customer</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item text-center">
+                        <div
+                            class="carousel-slide d-flex flex-column justify-content-center align-items-center text-center pt-5">
+                            <div class="carousel-img">
+                                <img src="images/testimonial.jpg" class="d-block w-100 rounded-circle" alt="test">
+                            </div>
+                            <div class="carousel-caption "> <!-- d-none d-md-block-->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At harum molestiae facilis
+                                    cumque explicabo, ipsam sapiente hic praesentium quos corrupti eaque, cupiditate
+                                    aperiam vel error?</p>
+                                <h5>Alex Smith</h5>
+                                <h6>Envato Customer</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <div
+                            class="carousel-slide d-flex flex-column justify-content-center align-items-center text-center pt-5">
+                            <div class="carousel-img">
+                                <img src="images/testimonial.jpg" class="d-block w-100 rounded-circle" alt="test">
+                            </div>
+                            <div class="carousel-caption "> <!-- d-none d-md-block-->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At harum molestiae facilis
+                                    cumque explicabo, ipsam sapiente hic praesentium quos corrupti eaque, cupiditate
+                                    aperiam vel error?</p>
+                                <h5>Alex Smith</h5>
+                                <h6>Envato Customer</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- ?============================================= ICONS ============================================= -->
 
+    <section id="icons">
+        <div class="container p-5">
+            <div class="row row-cols-lg-4 row-cols-sm-1">
+                <div class="col p-5">
+                    <div class="icons-card d-flex flex-column">
+                        <div class="four-icon d-flex justify-content-center align-items-center mb-3">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div
+                            class="icon-content position-relative d-flex flex-column justify-content-center align-items-center text-center">
+                            <h3>850</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-5">
+                    <div class="icons-card d-flex flex-column">
+                        <div class="four-icon d-flex justify-content-center align-items-center mb-3">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                        </div>
+                        <div
+                            class="four-icon-content position-relative d-flex flex-column justify-content-center align-items-center text-center">
+                            <h3>230</h3>
+                            <p>Complete Projects</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-5">
+                    <div class="icons-card d-flex flex-column">
+                        <div class="four-icon d-flex justify-content-center align-items-center mb-3">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <div
+                            class="four-icon-content position-relative d-flex flex-column justify-content-center align-items-center text-center">
+                            <h3>9450</h3>
+                            <p>Lines Of Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-5">
+                    <div class="icons-card d-flex flex-column">
+                        <div class="four-icon d-flex justify-content-center align-items-center mb-3">
+                            <i class="fa-solid fa-cloud-arrow-down"></i>
+                        </div>
+                        <div
+                            class="four-icon-content position-relative d-flex flex-column justify-content-center align-items-center text-center">
+                            <h3>780</h3>
+                            <p>Files Downloaded</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ?============================================= TEAM ============================================= -->
+
+    <section id="team" class="whitesmoke-bg py-5 px-lg-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/1.jpg" class="card-img-top" alt="1">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
