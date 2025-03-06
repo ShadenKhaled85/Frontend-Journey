@@ -42,6 +42,15 @@ img {
     height: auto;
 }
 
+.card-img-wrapper{
+    position: relative;
+    overflow: hidden; /* Ensure the overlay doesn't take space before appearing */
+}
+
+.card{
+    cursor: pointer;
+}
+
 /* ?============ BG ============ */
 
 .whitesmoke-bg{
@@ -103,14 +112,31 @@ h3{
     font-size: 0.9rem;
 }
 
+.light-hover{
+    background-color: black;
+    color: var(--tertiary-color);
+}
+
+.dark-hover{
+    background-color: var(--tertiary-color);
+    color: black;
+}
+
 .light-hover:hover{
     background-color: var(--tertiary-color);
     color: black;
+    border: 1px solid black;
 }
 
 .dark-hover:hover{
     background-color: black;
     color: var(--tertiary-color);
+}
+
+.port-circle{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
 }
 
 i{

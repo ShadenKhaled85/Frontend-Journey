@@ -212,14 +212,9 @@ nav a{
     width: 100%;
 } */
 
-.port-img-wrapper{
-    position: relative;
-    overflow: hidden; /* Ensure the overlay doesn't take space before appearing */
-}
-
-.port-overlay{
+.white-overlay{
     position: absolute;
-    bottom: 10px; /* Start from the bottom */
+    bottom: 10px; 
     top: 10px;
     left: 10px;
     right: 10px;
@@ -229,20 +224,16 @@ nav a{
     opacity: 0; /* Initially transparent */
 }
 
-.portfolio-card:hover .port-overlay{
+.portfolio-card:hover .white-overlay{
     transform: translateY(0); /* Slide up on hover */
     opacity: 1; /* Visible */
 }
 
-.port-overlay h6{
+.white-overlay h6{
     letter-spacing: 2px;
 }
 
-.port-circle{
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-}
+
 
 /* ?============================================= TESTIMONIALS =============================================  */
 
@@ -297,3 +288,44 @@ nav a{
 }
 
 /* ?============================================= TEAM =============================================  */
+
+#team .card-body{
+    background-color: rgb(92, 91, 91);
+    color: var(--tertiary-color);
+}
+
+.team-overlay{
+    position: absolute;
+    bottom: 10px; /* Start from the bottom */
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9); 
+    transform: rotateY(0deg); 
+    transition: all var(--transition-duration) ease-in-out;
+    opacity: 0; /* Initially transparent */
+}
+
+.team-card:hover .team-overlay{
+    transform: rotateY(360deg);
+    opacity: 1; 
+}
+
+.team-card img[alt="team"]{
+    transition: transform var(--transition-duration);
+}
+
+.team-card:hover img[alt="team"]{
+    transform: scale(1.3);
+}
+
+/* ?============================================= CONTACT =============================================  */
+
+.form-control:focus {
+    outline: none; /* Remove the default outline */
+    box-shadow: none; /* Remove any box shadow (if applicable) */
+    border-color: transparent; /* Ensure no border color change */
+    background-color: var(--secondary-bg-color); /* Add a custom background color */
+}
+
+
