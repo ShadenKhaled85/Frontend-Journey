@@ -20,21 +20,6 @@ const quotes = [
 
 ];
 
-/*
-var lastQuote = null; // Track the last displayed quote
-// Function to generate a random quote
-function generateQuote(){
-    let randomIndex;
-    let randomQuote;
-    do{
-        randomIndex = Math.floor(Math.random() * quotes.length); // Generate a random index
-        randomQuote = quotes[randomIndex]; // Get a random quote
-    }while(lastQuote===randomQuote) // Repeat if the quote is the same as the last one
-    lastQuote = randomQuote; // Update the last displayed quote
-    document.getElementById("quote").textContent = randomQuote; // Display the quote
-}
-*/
-
 let remainingQuotes = [...quotes]; // Create a copy of the quotes array
 
 // Function to generate a random quote
@@ -49,3 +34,18 @@ function generateQuote() {
 
     document.getElementById("quote").textContent = randomQuote; // Display the quote
 }
+
+/*
+var lastQuote = null; // Track the last displayed quote
+// Function to generate a random quote
+function generateQuote(){
+    let randomIndex;
+    let randomQuote;
+    do{
+        randomIndex = Math.floor(Math.random() * quotes.length); // Generate a random index
+        randomQuote = quotes[randomIndex]; // Get a random quote
+    }while(lastQuote===randomQuote) // Repeat if the quote is the same as the last one
+    lastQuote = randomQuote; // Update the last displayed quote
+    document.getElementById("quote").textContent = randomQuote; // Display the quote
+}
+*/
