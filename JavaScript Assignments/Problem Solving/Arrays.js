@@ -1,6 +1,10 @@
 
 var array = [1,2,3,4,5,6];
 
+//#region Taking Array as Input
+
+//#endregion
+
 //#region Find the Sum of All Elements 
 function sumArray(arr){
     let sum=0;
@@ -156,9 +160,39 @@ console.log(findIndex([5, 10, 15, 20], 15));
 //#endregion
 
 
-//#region Find the Index of an Element
+//#region Sort an Array in Ascending Order
+/* BUBBLE SORT */
+function bubbleSort(arr){
+    let sorted = [...arr]; // copy to avoid modifying the original
+    let arrLength = sorted.length;    
+    for(let i=0; i<arrLength-1; i++){
+        for(let j=0; j<arrLength-1-i; j++){
+            if(sorted[j] > sorted[j+1]){
+                let temp = sorted[j+1];
+                sorted[j+1] = sorted[j];
+                sorted[j] = temp;
+            }
+        }
+    }
+    return sorted;
+}
+console.log(bubbleSort([4, 2, 8, 1, 5])); // Output: [1, 2, 4, 5, 8]
+
+function sortArray(arr){
+    let sorted = [...arr];
+    for(let i=0; i < sorted.length; i++){
+        for (let j = 0; j < sorted.length-1; j++) {
+            if (sorted[j] > sorted[j+1]) {
+                [sorted[j], sorted[j + 1]] = [sorted[j + 1], sorted[j]]; // swap elements
+            }
+        }
+    }
+    return sorted;
+}
+console.log(sortArray([4, 2, 8, 1, 5])); // Output: [1, 2, 4, 5, 8]
 //#endregion
 
 
 //#region Find the Index of an Element
+
 //#endregion
