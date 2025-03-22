@@ -2,7 +2,9 @@
 var array = [1,2,3,4,5,6];
 
 //#region Taking Array as Input
-
+var arrayInput = prompt("Enter array of numbers separated by space");
+var arrSplit = arrayInput.split(' ').map(Number);
+console.log(arrSplit);
 //#endregion
 
 //#region Find the Sum of All Elements 
