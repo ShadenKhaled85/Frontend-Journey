@@ -31,9 +31,8 @@ var map = function(arr,fn){
     }
     return result;
 }
+//#endregion
 
-
-
-
+//#region
 
 //#endregion
