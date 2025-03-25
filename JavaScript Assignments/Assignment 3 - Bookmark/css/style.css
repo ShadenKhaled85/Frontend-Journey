@@ -1,0 +1,64 @@
+/* ?========================== FONTS ==========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* ?========================== ICONS ==========================*/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+/* ?========================== STYLING ==========================*/
+
+body{
+    background-color: rgb(249, 240, 228);
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+main .container h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    position: relative;
+}
+
+h1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    z-index: -1;
+    transition: height 0.5s;
+}
+
+h1:hover::before{
+    height: 60%;
+}
+
+.dotted-line {
+    border: none;
+    border-top: 2px dotted black;
+    width: 100%; /* Full width of its container */
+}
+
+main .container h2{
+    font-family: 'Righteous', cursive;
+}
+
+.bookmark-header{
+    background-image: linear-gradient(to right, green, rgb(171, 171, 91));
+    -webkit-background-clip: text; /* Applies the gradient only to the text. */
+    -webkit-text-fill-color: transparent; /*  Hides the default text color, making the gradient visible. */
+}
+
+.form-control:focus {
+    border-color: #fec260;
+    box-shadow: 0 0 10px #fec260; 
+}
+
+.orange-btn{
+    background-color: rgba(202, 68, 19, 0.923);
+    color: #fff;
+}
