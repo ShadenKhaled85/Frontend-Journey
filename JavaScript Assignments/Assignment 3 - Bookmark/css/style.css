@@ -60,5 +60,12 @@ main .container h2{
 
 .orange-btn{
     background-color: rgba(202, 68, 19, 0.923);
+}
+
+.white-btn{
     color: #fff;
+}
+
+.visit-btn{
+    background-color: #9eb23b;
 }

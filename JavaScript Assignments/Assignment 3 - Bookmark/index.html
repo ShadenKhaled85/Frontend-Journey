@@ -37,7 +37,7 @@
                     <input type="url" class="form-control py-2" id="bookmarkURL" placeholder="Website Url">
                 </div>
                 <button type="submit" id="submitBtn"
-                    class="orange-btn mt-2 border-0 px-5 py-2 rounded-3">Submit</button>
+                    class="orange-btn white-btn mt-2 border-0 px-5 py-2 rounded-3">Submit</button>
             </div>
             <hr class="dotted-line mt-4">
         </div>
@@ -53,15 +53,24 @@
             </thead>
             <tbody id="tableContent">
                 <tr>
-                    <td>1</td>
-                    <td>Shaden</td>
-                    <td>ddd</td>
-                    <td>dd</td>
+                    <td class="pt-3">1</td>
+                    <td class="pt-3">Shaden</td>
+                    <td>
+                        <button class="visit-btn white-btn border-0 px-3 py-2 rounded-3">
+                            <i class="fa-solid fa-eye"></i>
+                            Visit
+                        </button>
+                    </td>
+                    <td>
+                        <button class="white-btn bg-danger border-0 px-3 py-2 rounded-3">
+                            <i class="fa-solid fa-trash-can"></i>
+                            Delete
+                        </button>
+                    </td>
                 </tr>
             </tbody>
         </table>
     </main>
-
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
