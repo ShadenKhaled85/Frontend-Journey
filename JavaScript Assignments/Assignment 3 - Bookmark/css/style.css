@@ -48,14 +48,39 @@ main .container h2{
     box-shadow: 0 0 10px #fec260; 
 }
 
+/* 
+input:valid {
+    border: 2px solid green;
+    box-shadow: 0 0 10px green;
+}
+
+input:invalid {
+    border: 2px solid red;
+    box-shadow: 0 0 10px red;
+} */
+
 .btn-orange{
     background-color: rgba(202, 68, 19, 0.923);
 }
 
+.btn-orange:hover{
+    background-color: rgba(150, 52, 17, 0.923);
+}
+
+
 .btn-white{
     color: #fff;
+    transition: background-color 0.5s;
 }
 
 .btn-visit{
     background-color: #9eb23b;
+}
+
+.btn-visit:hover{
+    background-color: #707e29;
+}
+
+.btn-delete:hover{
+    background-color: rgb(160, 0, 0) !important;
 }
