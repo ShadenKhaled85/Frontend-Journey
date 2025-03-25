@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
     <title>Bookmark</title>
 </head>
 
@@ -36,8 +36,8 @@
                     </label>
                     <input type="url" class="form-control py-2" id="bookmarkURL" placeholder="Website Url">
                 </div>
-                <button type="submit" id="submitBtn"
-                    class="orange-btn white-btn mt-2 border-0 px-5 py-2 rounded-3">Submit</button>
+                <button onclick="addBookmark()" type="submit" id="submitBtn"
+                    class="btn-orange white-btn mt-2 border-0 px-5 py-2 rounded-3">Submit</button>
             </div>
             <hr class="dotted-line mt-4">
         </div>
@@ -52,22 +52,7 @@
                 </tr>
             </thead>
             <tbody id="tableContent">
-                <tr>
-                    <td class="pt-3">1</td>
-                    <td class="pt-3">Shaden</td>
-                    <td>
-                        <button class="visit-btn white-btn border-0 px-3 py-2 rounded-3">
-                            <i class="fa-solid fa-eye"></i>
-                            Visit
-                        </button>
-                    </td>
-                    <td>
-                        <button class="white-btn bg-danger border-0 px-3 py-2 rounded-3">
-                            <i class="fa-solid fa-trash-can"></i>
-                            Delete
-                        </button>
-                    </td>
-                </tr>
+
             </tbody>
         </table>
     </main>

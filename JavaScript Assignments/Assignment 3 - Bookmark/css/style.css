@@ -1,14 +1,4 @@
-/* ?========================== FONTS ==========================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
-/* ?========================== ICONS ==========================*/
-
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
-
-/* ?========================== STYLING ==========================*/
 
 body{
     background-color: rgb(249, 240, 228);
@@ -58,14 +48,14 @@ main .container h2{
     box-shadow: 0 0 10px #fec260; 
 }
 
-.orange-btn{
+.btn-orange{
     background-color: rgba(202, 68, 19, 0.923);
 }
 
-.white-btn{
+.btn-white{
     color: #fff;
 }
 
-.visit-btn{
+.btn-visit{
     background-color: #9eb23b;
 }
