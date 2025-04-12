@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.css">
-    <title>Login</title>
+    <title>Sign Up</title>
 </head>
 
 <body>
@@ -16,19 +16,33 @@
             <h1 class="mb-3">Smart Login System</h1>
 
             <div class="mb-3">
-                <input type="text" class="form-control bg-transparent" id="userName" placeholder="Enter your name">
+                <input oninput="validateUser(this)" type="text" class="form-control bg-transparent" id="signName"
+                    placeholder="Enter your name">
+                <div class="alert alert-danger my-2 d-none" role="alert">
+                    Write your first and second name
+                </div>
             </div>
 
             <div class="mb-3">
-                <input type="email" class="form-control bg-transparent" id="userEmail" placeholder="Enter your email">
+                <input oninput="validateUser(this)" type="email" class="form-control bg-transparent" id="signEmail"
+                    placeholder="Enter your email">
+                <div class="alert alert-danger my-2 d-none" role="alert">
+                    Write a valid email
+                </div>
             </div>
 
             <div class="mb-3">
-                <input type="password" class="form-control bg-transparent" id="userPassword"
-                    placeholder="Enter your password">
+                <input oninput="validateUser(this)" type="password" class="form-control bg-transparent"
+                    id="signPassword" placeholder="Enter your password">
+                <div class="alert alert-danger my-2 d-none" role="alert">
+                    Your password must be between 8-20 characters, including at least one lowercase letter, one
+                    uppercase letter, one number, and one special character </div>
             </div>
 
-            <button onclick="" type="submit" class="btn btn-outline-info form-btn w-100 my-3 ">Sign Up</button>
+            <p id="required"></p>
+
+            <button onclick="signUp()" type="submit" class="btn btn-outline-info form-btn w-100 my-3 ">Sign
+                Up</button>
             <p class="text-white">Already have an account?
                 <a href="index.html" class="text-white">Sign In</a>
             </p>

@@ -11,17 +11,29 @@
 
 <body>
 
+    <span id="username"></span> <!-- Welcome -->
+
     <div class="container login-container justify-content-center my-5 text-center">
         <div class="group m-auto w-75 p-5">
             <h1 class="mb-3">Smart Login System</h1>
+
             <div class="mb-3">
-                <input type="email" class="form-control bg-transparent" id="userEmail" placeholder="Enter your email">
+                <input oninput="validateUser(this)" type="email" class="form-control bg-transparent" id="signEmail"
+                    placeholder="Enter your email">
+                <div class="alert alert-danger my-2 d-none" role="alert">
+                    Write a valid email
+                </div>
             </div>
 
             <div class="mb-3">
-                <input type="password" class="form-control bg-transparent" id="userPassword"
-                    placeholder="Enter your password">
+                <input oninput="validateUser(this)" type="password" class="form-control bg-transparent"
+                    id="signPassword" placeholder="Enter your password">
+                <div class="alert alert-danger my-2 d-none" role="alert">
+                    Incorrect password or account not found.
+                </div>
             </div>
+
+            <!-- <p id="incorecct"></p> -->
 
             <button onclick="" type="submit" class="btn btn-outline-info form-btn w-100 my-3 ">Login</button>
             <p class="text-white">Don't have an account?
