@@ -36,7 +36,7 @@ function addBookmark() {
     }
     
 
-    var isDuplicate = bookmarksContainer.some(function (bookmark) {
+    var isDuplicate = bookmarksContainer.some(function (bookmark){
         return bookmark.name.toLowerCase() === name.toLowerCase();
     });
 

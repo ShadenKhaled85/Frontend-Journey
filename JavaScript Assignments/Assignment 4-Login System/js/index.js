@@ -47,19 +47,13 @@ function validateUser(element){ // this
 
 // Check if email already exists
 function isExist(users) {
-    var email = emailInput.value.toLowerCase();
-
-    // Check if email is valid (contains @ and ends with .com)
-    if (!email.includes("@") || !email.endsWith(".com")) {
-        return false;
-    }
-
     // Loop through users and check for duplicate email
     for (var i = 0; i < users.length; i++) {
-        if (users[i].email.toLowerCase() === email) {
-            return true;
+        if (users[i].emailInput.value.toLowerCase() === email.toLowerCase()) {
+            return true; // User found with matching email
         }
     }
+    return false; // No matching user
 }
 
 // Check inputs(empty or not)
@@ -98,25 +92,32 @@ function clearForm(){
     nameInput.value = null;
     emailInput.value = null;
     passwordInput.value = null;
+    alertMessage = null;
 }
 
-/* ======================================== SIGN IN ======================================== */
+/* ======================================== LOGIN ======================================== */
 
-document.getElementById('login').addEventListener('click', function () {
-    if (singEmail.value == '' || signPassword.value == '') {
-        document.getElementById('message').innerHTML = `<p class ='text-center'>All inputs is required</p>`;
-    } else {
-        checkUser();
+function login() {
+    var loginMessage = document.getElementById('incorrect'); // To display login messages
+    // Validate if inputs are empty
+    if (isEmpty()) {
+        loginMessage.innerHTML = '<span class="text-danger m-3">Both fields are required.</span>';
+        return false;
     }
-})
 
-function checkUser(){
-    for (var i = 0; i < user.length; i++) {
-        if (nameInput.value == user[i].email && passwordInput.value == user[i].password) {
-            var newName = user[i].name;
-            localStorage.setItem('userName', newName);
-            location.href = '../index.html';
-            break;
-        }
+    // Get email and password values
+    var email = emailInput.value;
+    var password = passwordInput.value;
+
+    // Check if the user exists with the correct email and password
+    if (isExist(signUpUsers)) {
+        // Store the session username in localStorage for the session (optional)
+        localStorage.setItem('sessionUsername', email);
+
+        // Redirect to the dashboard or main page after successful login
+        window.location.href = '../home.html'; // Adjust path as necessary
+    } 
+    else {
+        loginMessage.innerHTML = '<span class="text-danger m-3">Invalid email or password.</span>';
     }
 }
