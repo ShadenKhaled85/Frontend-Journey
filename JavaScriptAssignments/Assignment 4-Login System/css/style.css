@@ -1,0 +1,56 @@
+body, .group{
+    background-color: #24353f;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* ?======================================== SIGN UP & SIGN IN ======================================== */
+
+h1{
+    font-size: 3rem;
+}
+
+.group{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+h1,.form-btn{
+    color: rgb(23, 162, 184);
+}
+
+a{
+    text-decoration: none;
+}
+
+a,p,.form-btn{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.form-btn:hover{
+    color: white;
+    background-color: rgb(23, 162, 184);
+}
+
+.form-control{
+    color: white !important;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+input::placeholder{
+    color: rgb(157, 157, 157) !important; 
+    opacity: 0.9;  
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+/* ?======================================== SIGNED IN ======================================== */
+
+
+/* ?======================================== LOG OUT ======================================== */

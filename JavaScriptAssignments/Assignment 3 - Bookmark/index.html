@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Bookmark</title>
+</head>
+
+<body>
+    <main class="home">
+        <div class="container py-5 d-flex flex-column justify-content-center align-items-center">
+            <h1>Bookmarker</h1>
+            <hr class="dotted-line mt-5">
+            <div
+                class="bookmark-body w-100 p-3 py-1 mt-4 d-flex flex-column justify-content-center align-items-center gap-4">
+                <h2 class="bookmark-header">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="site-name w-100 d-flex flex-column justify-content-center mb-4">
+                    <label for="bookmarkName" class="pb-2 fw-semibold">
+                        <i class="fa-solid fa-book-bookmark pe-2"></i>
+                        Site Name
+                    </label>
+                    <input type="text" id="bookmarkName" required minlength="3" class="form-control py-2"
+                        placeholder="Bookmark Name">
+                </div>
+                <div class="site-url w-100 d-flex flex-column justify-content-center">
+                    <label for="bookmarkURL" class="pb-2 fw-semibold">
+                        <i class="fa-solid fa-link pe-2"></i>
+                        Site Url
+                    </label>
+                    <input type="url" id="bookmarkURL" required class="form-control py-2" placeholder="Website Url">
+                </div>
+                <button onclick="addBookmark()" type="submit" id="submitBtn"
+                    class="btn-orange btn-white mt-2 border-0 px-5 py-2 rounded-3">Submit</button>
+            </div>
+            <hr class="dotted-line mt-4">
+        </div>
+
+        <table class="table mt-1 text-center bg-light container">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableContent">
+
+            </tbody>
+        </table>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
