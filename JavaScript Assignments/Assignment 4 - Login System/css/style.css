@@ -1,4 +1,8 @@
-body{
+body, .login-container{
     background-color: #24353f;
     font-family: 'Titillium Web', sans-serif;
 }
+
+/* .login-container{
+    box-shadow: 2px 10px black;
+} */
