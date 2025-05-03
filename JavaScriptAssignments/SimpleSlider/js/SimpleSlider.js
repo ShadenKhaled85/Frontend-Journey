@@ -70,13 +70,35 @@ closeBtn.addEventListener('click', close);
 document.addEventListener('keydown',function(e){
     console.log(e.key);
     if(e.key == 'ArrowRight'){
-        nextSlide();
+        slide(1);
     }
     else if(e.key == 'ArrowLeft'){
-        previousSlide();
+        slide(-1);
     }
     else if(e.key == 'Escape'){
         close();
     }
 })
+
+lightBoxContainer.addEventListener('click', function(){
+    // Event Bubbling
+    close(); // closes when we click anywhere, even on the image itself as lightBoItem is inside lightBoxContainer
+})
+
+lightBoxItem.addEventListener('click',function(e){
+    e.stopPropagation(); // Prevent event bubbling 
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
 
