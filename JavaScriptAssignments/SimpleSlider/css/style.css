@@ -1,0 +1,47 @@
+
+.item-caption{
+    width: 80%;
+    left: 10%;
+    background-color: white;
+}
+
+.lightbox-container{
+    background-color: rgba(0,0,0,0.7);
+}
+
+.lightbox-item{
+    background-image: url(../images/p-3.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.lightbox-item i{
+    font-size: 22px;
+    margin: 15px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.lightbox-item i:hover{
+    font-size: 20px;
+    margin: 15px;
+    color: rgba(0,0,0,0.7);
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.left{
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
