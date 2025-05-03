@@ -20,34 +20,51 @@ for(let i=0; i<myImages.length; i++){
     })
 }
 
-function nextSlide(){
-    currentSlideIndex++;
-    console.log(currentSlideIndex);
+// function nextSlide(){
+//     currentSlideIndex++;
+//     console.log(currentSlideIndex);
+//     if(currentSlideIndex==myImages.length){
+//         currentSlideIndex = 0;
+//     }
+//     var nextImgSrc = myImages[currentSlideIndex].getAttribute('src');
+//     console.log(nextImgSrc);
+//     lightBoxItem.style.backgroundImage = `url(${nextImgSrc})`;
+// }
+
+// function previousSlide(){
+//     currentSlideIndex--;
+//     console.log(currentSlideIndex);
+//     if(currentSlideIndex < 0){
+//         currentSlideIndex = myImages.length-1;
+//     }
+//     var previousImgSrc = myImages[currentSlideIndex].getAttribute('src');
+//     console.log(previousImgSrc);
+//     lightBoxItem.style.backgroundImage = `url(${previousImgSrc})`;
+// }
+
+// Better way(has previous & next)
+function slide(step){
+    currentSlideIndex+=step;
     if(currentSlideIndex==myImages.length){
         currentSlideIndex = 0;
     }
-    var nextImgSrc = myImages[currentSlideIndex].getAttribute('src');
-    console.log(nextImgSrc);
-    lightBoxItem.style.backgroundImage = `url(${nextImgSrc})`;
-}
-
-function previousSlide(){
-    currentSlideIndex--;
-    console.log(currentSlideIndex);
-    if(currentSlideIndex < 0){
+    if(currentSlideIndex<0){
         currentSlideIndex = myImages.length-1;
     }
-    var previousImgSrc = myImages[currentSlideIndex].getAttribute('src');
-    console.log(previousImgSrc);
-    lightBoxItem.style.backgroundImage = `url(${previousImgSrc})`;
+    var currentImgSrc = myImages[currentSlideIndex].getAttribute('src');
+    lightBoxItem.style.backgroundImage = `url(${currentImgSrc})`;
 }
 
 function close(){
     lightBoxContainer.classList.replace('d-block','d-none');
 }
 
-rightArrow.addEventListener('click', nextSlide)
-leftArrow.addEventListener('click',previousSlide);
+rightArrow.addEventListener('click', function(){
+    slide(1);
+})
+leftArrow.addEventListener('click',function(){
+    slide(-1);
+});
 closeBtn.addEventListener('click', close);
 
 document.addEventListener('keydown',function(e){
@@ -58,4 +75,8 @@ document.addEventListener('keydown',function(e){
     else if(e.key == 'ArrowLeft'){
         previousSlide();
     }
+    else if(e.key == 'Escape'){
+        close();
+    }
 })
+
