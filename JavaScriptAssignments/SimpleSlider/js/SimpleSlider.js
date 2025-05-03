@@ -49,3 +49,13 @@ function close(){
 rightArrow.addEventListener('click', nextSlide)
 leftArrow.addEventListener('click',previousSlide);
 closeBtn.addEventListener('click', close);
+
+document.addEventListener('keydown',function(e){
+    console.log(e.key);
+    if(e.key == 'ArrowRight'){
+        nextSlide();
+    }
+    else if(e.key == 'ArrowLeft'){
+        previousSlide();
+    }
+})
