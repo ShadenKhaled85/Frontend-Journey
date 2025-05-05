@@ -11,7 +11,59 @@
 
 <body>
 
+    <!-- ?======================= NAVBAR ======================= -->
+
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg bg-opacity-100" data-bs-theme="dark">
+        <div class="container-md py-4">
+            <a class="navbar-brand fw-medium fs-3" href="#">DevFolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown" data-bs-theme="dark">
+                <ul class="navbar-nav justify-content-end ms-auto fs-6 fw-medium">
+                    <li class="nav-item position-relative ms-2">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item position-relative ms-2">
+                        <a class="nav-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item position-relative ms-2">
+                        <a class="nav-link" href="#services">SERVICES</a>
+                    </li>
+                    <li class="nav-item position-relative ms-2">
+                        <a class="nav-link" href="#work">WORK</a>
+                    </li>
+                    <li class="nav-item position-relative ms-2">
+                        <a class="nav-link" href="#blog">BLOG</a>
+                    </li>
+                    <li class="nav-item position-relative ms-2">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ?======================= HOME ======================= -->
+
+    <div class="intro fixed-bg" id="home" style="background-image: url(images/intro-bg.jpg);
+    ">
+        <div class="overlay-intro"></div>
+        <div class="intro-content d-flex flex-column justify-content-center align-items-center gap-5 text-center">
+            <div class="container">
+                <h1 class="main-header">I am Morgan Freeman</h1>
+                <p class="main-header-animation">
+                    <span class="animated-text"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
