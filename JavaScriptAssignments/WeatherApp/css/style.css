@@ -1,5 +1,10 @@
 /* ?======================= NAVBAR =======================  */
 
+.cloud{
+    font-size: 2.2rem;
+    color: var(--blue-color);
+}
+
 .nav-link{
     transition: all var(--transition-duration); /* 1s allows the width goes from 0% to 50% slowly */ 
 }
@@ -8,56 +13,120 @@ nav a{
     color: var(--home-color) !important;
 }
 
-.nav-link::before{
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: var(--home-color);
-    bottom: -3px;
-    left: 0;
-    transition: all 1s;
+.nav-link{
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 8px 20px;
+    transition: all var(--transition-duration) ease;
 }
-.nav-link:hover::before{
-    width: 40px;
+
+.nav-link:hover{
+    border-color: var(--blue-color);
+}
+
+/* Optional: Prevent border when active (toggled) */
+.nav-link.active,
+.nav-link:focus {
+    border-color: transparent;
+    outline: none;
 }
 
 /* ?======================= HOME =======================  */
 
-.intro {
-    height: 100vh;
-    position: relative;
+.search-section {
+    height: 60vh;
     color: var(--home-color);
-}
-
-/* .home-bg-image{
-    background-image: url(../images/intro-bg.jpg);
     background-position: center center;
-    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-} */
-
-.intro .overlay-intro{
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
 }
 
-.intro-content{
-    height: 100vh;
+
+
+/* ?======================= SEARCH AREA =======================  */
+
+.search-box {
     position: relative;
+    margin-bottom: 30px;
 }
-
-.main-header{
-    font-size: 4.5rem;
-    font-weight: 600;
-}
-
-.main-header-content{
-    font-size: 2.5rem;
-    font-weight: var(--font-weight-secondary);
-}
+  
+  .search-box input[type="search"] {
+    width: 100%;
+    padding: 12px 100px 12px 15px;
+    font-size: 16px;
+    border: 2px solid #0078ff;
+    border-radius: 50px;
+    outline: none;
+  }
+  
+  .search-box button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    background-color: #0078ff;
+    border: none;
+    color: #fff;
+    padding: 0 25px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-box button:hover {
+    background-color: #005ec9;
+  }
+  
+  .forecast-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .forecast,
+  .today.forecast {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forecast-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .forecast-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .forecast-icon img {
+    max-width: 60px;
+  }
+  
+  .degree {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .custom {
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
+  .forecast-content span {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 14px;
+  }
+  
+  .forecast-content span img {
+    width: 16px;
+    margin-right: 5px;
+  }
+  

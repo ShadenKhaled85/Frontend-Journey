@@ -1,0 +1,64 @@
+:root{
+    /* ?================== FONTS ================== */
+    --primary-font: Roboto, "Open Sans", sans-serif;
+    /* ?================== COLORS ================== */
+    --home-color: #fff;
+    --primary-bg-color: #f8f9fa;
+    --blue-bg-color: #0078ff;
+    --primary-font-color: #4e4e4e;
+    --secondary-font-color: #1e1e1e;
+    --blue-color: #009ad8;
+    /* ?================== TEXT ================== */
+    --font-weight-primary: 300;
+    --font-weight-secondary: 400;
+    --line-height: 1.7;
+    /* ?================== ANIMATION & TRANSITIONS ================== */
+    --transition-duration: 0.5s;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--primary-font);
+}
+
+/* 
+.blue-overlay{
+    position: absolute;
+    background-color: var(--blue-color);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.7;
+}
+
+.blue-line{
+    width: 40px;
+    height: 5px;
+    background-color: var(--blue-color);
+    margin: 0 auto;
+}
+
+p:not(.main-header-content){
+    color: var(--primary-font-color);
+}
+
+p{
+    line-height: var(--line-height);
+}
+
+h2,h3,h4,h5,h6{
+    color: var(--secondary-font-color);
+}
+
+.section-pt-4{
+    padding-top: 4rem;
+}
+
+.box-shadow{
+    box-shadow: 0 0 8px 20px rgba(0, 0, 0, 0), 0 0 20px rgba(0, 0, 0, 0.066);
+} 
+ */

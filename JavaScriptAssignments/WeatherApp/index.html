@@ -11,54 +11,97 @@
 
 <body>
 
-    <!-- ?======================= NAVBAR ======================= -->
+    <div class="site-content">
+        <!-- ?======================= NAVBAR ======================= -->
 
-    <nav id="navbar" class="navbar fixed-top navbar-expand-lg bg-opacity-100" data-bs-theme="dark">
-        <div class="container-md py-4">
-            <a class="navbar-brand fw-medium fs-3" href="#">DevFolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown" data-bs-theme="dark">
-                <ul class="navbar-nav justify-content-end ms-auto fs-6 fw-medium">
-                    <li class="nav-item position-relative ms-2">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item position-relative ms-2">
-                        <a class="nav-link" href="#about">ABOUT</a>
-                    </li>
-                    <li class="nav-item position-relative ms-2">
-                        <a class="nav-link" href="#services">SERVICES</a>
-                    </li>
-                    <li class="nav-item position-relative ms-2">
-                        <a class="nav-link" href="#work">WORK</a>
-                    </li>
-                    <li class="nav-item position-relative ms-2">
-                        <a class="nav-link" href="#blog">BLOG</a>
-                    </li>
-                    <li class="nav-item position-relative ms-2">
-                        <a class="nav-link" href="#contact">CONTACT</a>
-                    </li>
-                </ul>
+        <nav id="navbar" class="navbar bg-dark  navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-md py-4">
+                <a class="navbar-brand fw-medium fs-6 fw-bold" href="#"> <i class="fa-solid fa-cloud cloud pe-2"></i>
+                    Weather
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown" data-bs-theme="dark">
+                    <ul class="navbar-nav justify-content-end ms-auto fs-6 fw-light">
+                        <li class="nav-item position-relative ms-2">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item position-relative ms-4">
+                            <a class="nav-link" href="#news">News</a>
+                        </li>
+                        <li class="nav-item position-relative ms-4">
+                            <a class="nav-link" href="#live">Live cameras</a>
+                        </li>
+                        <li class="nav-item position-relative ms-4">
+                            <a class="nav-link" href="#photos">Photos</a>
+                        </li>
+                        <li class="nav-item position-relative ms-4">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- ?======================= HOME ======================= -->
+        <!-- ?======================= SEARCH AREA ======================= -->
 
-    <div class="intro fixed-bg" id="home" style="background-image: url(images/intro-bg.jpg);
-    ">
-        <div class="overlay-intro"></div>
-        <div class="intro-content d-flex flex-column justify-content-center align-items-center gap-5 text-center">
-            <div class="container">
-                <h1 class="main-header">I am Morgan Freeman</h1>
-                <p class="main-header-animation">
-                    <span class="animated-text"></span>
-                </p>
+
+        <div class="container">
+            <div class="search-box d-flex mt-5">
+                <input type="search" id="search" placeholder="Find your location...">
+                <button onclick="search()" id="search-btn">Find</button>
             </div>
+
+            <div id="forecast" class="forecast-container"></div>
         </div>
     </div>
+    <!-- <div class="search-section position-relative" style="background-image: url(images/London.jpg);">
+            <div class="container-md">
+                <div class="search-container d-flex justify-content-center align-items-center pt-5">
+                    <div class="input-group mb-3 w-100 mx-auto">
+                        <input type="search" class="form-control bg-dark" placeholder="Find your location..."
+                            aria-label="Find your location" aria-describedby="button-addon2">
+                        <button class="btn text-white" type="button" id="button-addon2"
+                            style="background-color: #0078ff;">
+                            Find
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+    <!-- 
+        <div class="forecast-table">
+            <div class="container">
+                <div class="forescast-container" id="forecast">
+                    <div class="row col-md-3">
+                        <div class="col bg-success">ss</div>
+                        <div class="col bg-info">ss</div>
+                        <div class="col bg-body-secondary">ss</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+ -->
+
+
+    <!-- <div class="intro fixed-bg" id="home" style="background-image: url(images/Londres.jpg);
+    ">
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" placeholder="Find your location..." />
+                <button>Find</button>
+            </div>
+        </section>
+
+    </div> -->
 
 
 
