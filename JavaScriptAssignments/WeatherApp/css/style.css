@@ -14,7 +14,7 @@ nav a{
 }
 
 .nav-link{
-    border: 1px solid transparent;
+    border: 3px solid transparent;
     border-radius: 30px;
     padding: 8px 20px;
     transition: all var(--transition-duration) ease;
@@ -31,20 +31,28 @@ nav a{
     outline: none;
 }
 
+img{
+  width: 50px;
+}
+
+body{
+  color:white
+}
+
 /* ?======================= HOME =======================  */
 
-.search-section {
+/* .search-section {
     height: 60vh;
     color: var(--home-color);
     background-position: center center;
     background-size: cover;
-}
+} */
 
 
 
 /* ?======================= SEARCH AREA =======================  */
 
-.search-box {
+/* .search-box {
     position: relative;
     margin-bottom: 30px;
 }
@@ -129,4 +137,4 @@ nav a{
     width: 16px;
     margin-right: 5px;
   }
-  
+   */
