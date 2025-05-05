@@ -1,10 +1,43 @@
-async function getData(){
-    var myData = await fetch('http://api.weatherapi.com/v1/search.json?key=3b69cc78408a4c8fb18124357250505&q=lond')
-    console.log(myData);
-    var response = await myData.json()
-    console.log(response);
-}
-getData();
+
+/* ================================= VARIABLES =================================  */
+
+// TODAY
+let todayName = document.querySelector("#today_date_day_name");
+let todayNumber = document.querySelector("#today_date_day_number");
+let todayMonth = document.querySelector("#today_date_month");
+let todayLocation = document.querySelector("#today_location");
+let todayTemp= document.querySelector("#today_temp");
+let todayConditionImg = document.querySelector("#today_condition_img");
+let todayConditionText = document.querySelector("#today_condition_text");
+let humidity = document.querySelector("#humidity");
+let wind = document.querySelector("#wind");
+let windDirection = document.querySelector("#wind_direction");
+// let weatherData;
+
+// NEXT DATA
+let nextDay = document.querySelector('.next_day_name');
+let nextMaxTemp = document.querySelector('.next_max_temp');
+let nextMinTemp = document.querySelector('.next_min_temp');
+let nextConditionImg = document.querySelector('.next_condition_img');
+let nextConditionText = document.querySelector('.next_condition_text');
+
+// SEARCH INPUT
+let searchInput = document.querySelector('#search');
+
+
+
+
+
+
+
+
+// async function getData(){
+//     var myData = await fetch('http://api.weatherapi.com/v1/search.json?key=3b69cc78408a4c8fb18124357250505&q=lond')
+//     console.log(myData);
+//     var response = await myData.json()
+//     console.log(response);
+// }
+// getData();
 
 // const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 // const monthNames = [
