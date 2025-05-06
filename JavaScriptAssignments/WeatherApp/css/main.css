@@ -20,8 +20,14 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
+body {
+    color: #bfc1c8;
     font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    background: #1e202b;
+    
 }
 
 /* 

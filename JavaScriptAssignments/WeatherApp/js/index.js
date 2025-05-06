@@ -24,11 +24,35 @@ let nextConditionText = document.querySelector('.next_condition_text');
 // SEARCH INPUT
 let searchInput = document.querySelector('#search');
 
+// FETCH API DATA
+async function getWeatherData(){
+    let weatherResponse = await fetch('https://api.weatherapi.com/v1/forecast.json?key=3b69cc78408a4c8fb18124357250505&q=London&days=3');
+    // console.log(weatherResponse);
+    let weatherData = await weatherResponse.json();
+    // console.log(weatherData);
+    return weatherData;
+}
+
+// DISPLAY TODAY DATA
+function displayTodayData(data){
+    todayLocation.innerHTML = data.location.name;
+    todayTemp.innerHTML = data.current.temp_c;
+    todayConditionImg.setAttribute('src',data.current.condition.icon);
+    todayConditionText.innerHTML = data.current.condition.text;
+    humidity.innerHTML = data.current.humidity + "%";
+    wind.innerHTML = data.current.wind_kph;
+}
 
 
+// DISPLAY NEXT DAYS DATA
 
-
-
+// START APP to call all functions
+async function startApp(){
+    let weatherData = await getWeatherData();
+    // console.log(weatherData);
+    displayTodayData(weatherData);
+}
+startApp();
 
 
 // async function getData(){

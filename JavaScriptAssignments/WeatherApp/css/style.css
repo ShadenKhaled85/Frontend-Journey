@@ -47,11 +47,6 @@ img{
   width: 50px;
 }
 
-/* body{
-  color:white
-} */
-
-
 /* ?======================= SEARCH AREA =======================  */
 
 /* Search Input */
@@ -67,19 +62,19 @@ img{
   color: #aaa;
 }
 
-input:focus {
+/* input:focus {
   outline: none;
   box-shadow: 0 0 5px #0dcaf0;
-}
+} */
 
 /* Cards Layout */
-.row.g-0 {
+/* .row.g-0 {
   display: flex;
   justify-content: center;
   gap: 20px;
-}
+} */
 
-.item {
+/* .item {
   background-color: #2c2f48;
   border-radius: 15px;
   padding: 20px;
@@ -87,55 +82,99 @@ input:focus {
   min-width: 250px;
   max-width: 300px;
   margin: 0 10px;
-}
+} */
 
 /* Card Top Section */
-.item p,
+/* .item p,
 .item span {
   margin: 0;
   color: #bbb;
-}
+} */
 
-/* Temperature Text */
-#today_temp, .next_max_temp {
+/* #today_temp, .next_max_temp {
   font-size: 42px;
   font-weight: bold;
-}
+} */
 
-/* Footer Icons */
-.footer-icons {
+/* .footer-icons {
   width: 24px;
   height: 24px;
   filter: brightness(0) invert(1);
 }
 
-/* Condition Text */
 .text-light-blue {
   color: #0dcaf0;
 }
 
-/* Date Headings */
 #today_date_day_name,
 .next_day_name {
   font-weight: bold;
   font-size: 18px;
 }
 
-/* Blue Highlight Strip */
 .bg-sec-color {
   background-color: #313852 !important;
 }
 
 .bg-main-color {
   background-color: #2c2f48 !important;
-}
+} */
 
 
 /* ?======================= WEATHER FORECAST =======================  */
 
 
+.bg-main-color { background: #262936 !important; } /* Example */
+.bg-sec-color { background-color: #323544 !important; }
+.text-light-blue { color: #17a2b8 !important; }
+.footer-icons { width: 20px; height: 20px; }
+#search {
+    border-radius: 2rem !important;
+    border: none !important;
+}
 
+.find-location{
+    position: relative;
+    top:2rem;
+}
 
+.find-location input[type="button"] {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]{
+    position: absolute;
+    right: 20px;
+    top: 6px;
+    cursor: pointer;
+}
+
+.button, form input[type="submit"], form input[type="button"], form button, form input[type="reset"] {
+  border: none;
+  background: #009ad8;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+}
+
+form input, form textarea, form select {
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+}
+button, input {
+  line-height: normal;
+}
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
 
 
 
