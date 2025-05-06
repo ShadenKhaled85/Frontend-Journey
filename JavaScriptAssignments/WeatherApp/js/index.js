@@ -40,11 +40,14 @@ function displayTodayData(data){
     todayConditionImg.setAttribute('src',data.current.condition.icon);
     todayConditionText.innerHTML = data.current.condition.text;
     humidity.innerHTML = data.current.humidity + "%";
-    wind.innerHTML = data.current.wind_kph;
+    wind.innerHTML = data.current.wind_kph + "km/h";
+    windDirection.innerHTML = data.current.wind_dir;
 }
 
 
 // DISPLAY NEXT DAYS DATA
+
+
 
 // START APP to call all functions
 async function startApp(){
