@@ -78,18 +78,19 @@ img{
 .find-location{
     position: relative;
     top:2rem;
+    width: 100%;
 }
 
 .find-location input[type="button"] {
     position: absolute;
-    right: 5px;
+    right: 100px;
     top: 5px;
     cursor: pointer;
 }
 
 input[type="submit"]{
     position: absolute;
-    right: 20px;
+    right: 100px;
     top: 6px;
     cursor: pointer;
 }

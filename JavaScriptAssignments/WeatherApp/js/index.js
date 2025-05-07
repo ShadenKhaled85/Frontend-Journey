@@ -25,22 +25,24 @@ let nextConditionText = document.getElementsByClassName('next_condition_text');
 let searchInput = document.querySelector('#search');
 
 // DATE OBJECT
-let date = new Date('2025-05-07');
+// let date = new Date('2025-05-07');
 // console.log(date); // displays today's date and time -> new Date()
-console.log(date.getDate()); 
-console.log(date.toLocaleDateString('en-US',{weekday:"long"})); // (format,object has options) // long option(Wednesday), short option(Wed)
-console.log(date.toLocaleDateString('en-US',{month:"long"})); 
+// console.log(date.getDate()); 
+// console.log(date.toLocaleDateString('en-US',{weekday:"long"})); // (format,object has options) // long option(Wednesday), short option(Wed)
+// console.log(date.toLocaleDateString('en-US',{month:"long"})); 
 
-// FETCH API DATA
-async function getWeatherData(){
-    let weatherResponse = await fetch('https://api.weatherapi.com/v1/forecast.json?key=3b69cc78408a4c8fb18124357250505&q=London&days=3');
+/* ================================= FETCH API DATA =================================  */
+
+async function getWeatherData(searchQuery){
+    let weatherResponse = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=3b69cc78408a4c8fb18124357250505&q=${searchQuery}&days=3`);
     // console.log(weatherResponse);
     let weatherData = await weatherResponse.json();
     // console.log(weatherData);
     return weatherData;
 }
 
-// DISPLAY TODAY DATA
+/* ================================= DISPLAY TODAY DATA =================================  */
+
 function displayTodayData(data){
     let todayDate = new Date();
     todayName.innerHTML = todayDate.toLocaleDateString('en-US',{weekday:"long"});
@@ -55,13 +57,16 @@ function displayTodayData(data){
     windDirection.innerHTML = data.current.wind_dir;
 }
 
+/* ================================= DISPLAY NEXT DAYS DATA =================================  */
 
-// DISPLAY NEXT DAYS DATA
 function displayNextData(data){
     let forecastData = data.forecast.forecastday;
     // console.log(forecastData); // array 3 objects of today and the next 2 days
     // console.log(nextMaxTemp); // array of 2 spans(next_max_temp)
     for(let i=0; i<2; i++){ // i<2 because we will loop on the 2nd and 3rd objects
+        let nextDate = new Date(forecastData[i+1].date);
+        // console.log(nextDate);
+        nextDay[i].innerHTML = nextDate.toLocaleDateString('en-US',{weekday:"long"});
         nextMaxTemp[i].innerHTML = forecastData[i+1].day.maxtemp_c; // i+1 as we will start from i=1
         nextMinTemp[i].innerHTML = forecastData[i+1].day.mintemp_c;
         nextConditionImg[i].setAttribute('src',forecastData[i+1].day.condition.icon);
@@ -69,10 +74,17 @@ function displayNextData(data){
     }
 }
 
+/* ================================= SEARCH =================================  */
+
+searchInput.addEventListener('keyup',function(e){
+    console.log(searchInput.value); // value of entered keys
+})
+
+/* ================================= START APP =================================  */
 
 // START APP to call all functions
 async function startApp(){
-    let weatherData = await getWeatherData();
+    let weatherData = await getWeatherData(searchQuery);
     // console.log(weatherData);
     displayTodayData(weatherData);
     displayNextData(weatherData);
