@@ -15,14 +15,21 @@ let windDirection = document.querySelector("#wind_direction");
 // let weatherData;
 
 // NEXT DATA
-let nextDay = document.querySelector('.next_day_name');
-let nextMaxTemp = document.querySelector('.next_max_temp');
-let nextMinTemp = document.querySelector('.next_min_temp');
-let nextConditionImg = document.querySelector('.next_condition_img');
-let nextConditionText = document.querySelector('.next_condition_text');
+let nextDay = document.getElementsByClassName('next_day_name');
+let nextMaxTemp = document.getElementsByClassName('next_max_temp');
+let nextMinTemp = document.getElementsByClassName('next_min_temp');
+let nextConditionImg = document.getElementsByClassName('next_condition_img');
+let nextConditionText = document.getElementsByClassName('next_condition_text');
 
 // SEARCH INPUT
 let searchInput = document.querySelector('#search');
+
+// DATE OBJECT
+let date = new Date('2025-05-07');
+// console.log(date); // displays today's date and time -> new Date()
+console.log(date.getDate()); 
+console.log(date.toLocaleDateString('en-US',{weekday:"long"})); // (format,object has options) // long option(Wednesday), short option(Wed)
+console.log(date.toLocaleDateString('en-US',{month:"long"})); 
 
 // FETCH API DATA
 async function getWeatherData(){
@@ -35,6 +42,10 @@ async function getWeatherData(){
 
 // DISPLAY TODAY DATA
 function displayTodayData(data){
+    let todayDate = new Date();
+    todayName.innerHTML = todayDate.toLocaleDateString('en-US',{weekday:"long"});
+    todayNumber.innerHTML = todayDate.getDate();
+    todayMonth.innerHTML = todayDate.toLocaleDateString('en-US',{month:"long"});
     todayLocation.innerHTML = data.location.name;
     todayTemp.innerHTML = data.current.temp_c;
     todayConditionImg.setAttribute('src',data.current.condition.icon);
@@ -46,7 +57,17 @@ function displayTodayData(data){
 
 
 // DISPLAY NEXT DAYS DATA
-
+function displayNextData(data){
+    let forecastData = data.forecast.forecastday;
+    // console.log(forecastData); // array 3 objects of today and the next 2 days
+    // console.log(nextMaxTemp); // array of 2 spans(next_max_temp)
+    for(let i=0; i<2; i++){ // i<2 because we will loop on the 2nd and 3rd objects
+        nextMaxTemp[i].innerHTML = forecastData[i+1].day.maxtemp_c; // i+1 as we will start from i=1
+        nextMinTemp[i].innerHTML = forecastData[i+1].day.mintemp_c;
+        nextConditionImg[i].setAttribute('src',forecastData[i+1].day.condition.icon);
+        nextConditionText[i].innerHTML = forecastData[i+1].day.condition.text;
+    }
+}
 
 
 // START APP to call all functions
@@ -54,6 +75,7 @@ async function startApp(){
     let weatherData = await getWeatherData();
     // console.log(weatherData);
     displayTodayData(weatherData);
+    displayNextData(weatherData);
 }
 startApp();
 

@@ -30,41 +30,7 @@ body {
     
 }
 
-/* 
-.blue-overlay{
-    position: absolute;
-    background-color: var(--blue-color);
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    opacity: 0.7;
-}
-
-.blue-line{
-    width: 40px;
-    height: 5px;
-    background-color: var(--blue-color);
-    margin: 0 auto;
-}
-
-p:not(.main-header-content){
-    color: var(--primary-font-color);
-}
-
-p{
-    line-height: var(--line-height);
-}
-
-h2,h3,h4,h5,h6{
-    color: var(--secondary-font-color);
-}
-
-.section-pt-4{
-    padding-top: 4rem;
-}
-
-.box-shadow{
+/* .box-shadow{
     box-shadow: 0 0 8px 20px rgba(0, 0, 0, 0), 0 0 20px rgba(0, 0, 0, 0.066);
 } 
  */
