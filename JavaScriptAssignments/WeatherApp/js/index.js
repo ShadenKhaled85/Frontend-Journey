@@ -34,7 +34,9 @@ let searchInput = document.querySelector('#search');
 /* ================================= FETCH API DATA =================================  */
 
 async function getWeatherData(searchQuery){
-    let weatherResponse = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=3b69cc78408a4c8fb18124357250505&q=${searchQuery}&days=3`);
+    // let weatherResponse = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=3b69cc78408a4c8fb18124357250505&q=${searchQuery}&days=3`);
+
+    let weatherResponse = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=3b69cc78408a4c8fb18124357250505&q=London&days=3`);
     // console.log(weatherResponse);
     let weatherData = await weatherResponse.json();
     // console.log(weatherData);
@@ -76,15 +78,15 @@ function displayNextData(data){
 
 /* ================================= SEARCH =================================  */
 
-searchInput.addEventListener('keyup',function(e){
-    console.log(searchInput.value); // value of entered keys
-})
+// searchInput.addEventListener('keyup',function(e){
+//     console.log(searchInput.value); // value of entered keys
+// })
 
 /* ================================= START APP =================================  */
 
 // START APP to call all functions
 async function startApp(){
-    let weatherData = await getWeatherData(searchQuery);
+    let weatherData = await getWeatherData();
     // console.log(weatherData);
     displayTodayData(weatherData);
     displayNextData(weatherData);
