@@ -77,9 +77,12 @@ function displayNextData(data){
 
 /* ================================= SEARCH =================================  */
 
-searchInput.addEventListener('input',function(e){
+searchInput.addEventListener('keyup',function(e){
     // console.log(searchInput.value); // value of entered keys
-    startApp(searchInput.value);
+    let city = searchInput.value.trim();
+    if(city.length >= 3){
+        startApp(city);
+    }
 })
 
 /* ================================= START APP =================================  */
@@ -88,8 +91,12 @@ searchInput.addEventListener('input',function(e){
 async function startApp(city = 'cairo'){ // default value
     let weatherData = await getWeatherData(city);
     // console.log(weatherData);
-    displayTodayData(weatherData);
-    displayNextData(weatherData);
+    // ERROR OBJECT WHEN LETTERS<3
+    if(!weatherData.error){ // if there is no error, display
+        displayTodayData(weatherData);
+        displayNextData(weatherData);
+    }
+
 }
 startApp();
 
